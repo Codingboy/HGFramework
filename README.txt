@@ -204,7 +204,7 @@ hungergames.paa is an edited version of http://wallpoh.com/wp-content/uploads/20
 License:
 HGFramework © 2013 Daniel Tkocz, used under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License:
 http://creativecommons.org/licenses/by-nc-sa/3.0/
-The files in =BTC=_revive, outlw_magRepack, scripts, cly_removedead, tao_foldmap_a3, VAS, reveal and all its subfolders and its files and files ending with .ogg or .paa are not affected by this licence. Contact the original authors on www.armaholic.com for more information or search for a LICENSE file in the folders.
+The files in =BTC=_revive, outlw_magRepack, scripts, cly_removedead, tao_foldmap_a3, VAS, reveal, damagesystem, Jump, windsystem, explosive_interface_fncs and all its subfolders and its files and files ending with .ogg or .paa are not affected by this licence. Contact the original authors on www.armaholic.com for more information or search for a LICENSE file in the folders.
 You are not allowed to change any variablename or variablevalue in "hg_variables.sqf" whos name starts with "hg_license_".
 You are not allowed to edit code if its execution is dependent of a variable which name starts with "hg_license_" if the variablevalue is false.
 
@@ -351,6 +351,10 @@ Changelog:
 	reduced loot in marksmanspecialbox
 	fixed: all players look at the weaponbox on teleport on dedicated server
 	drinking and eating needs some time
+
+0.8.2
+	removed HGFrameworkExample.Startis
+	renamed HGFrameworkExampleSmall.Startis to HGFrameworkExample.Startis
 
 
 

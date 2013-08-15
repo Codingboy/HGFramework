@@ -1,6 +1,8 @@
 private ["_null","_initStartBox","_initBoxes"];
 _null = [] execVM "HGF\hg_variables.sqf";
 waitUntil {scriptDone _null};
+_null = [] execVM "HGF\hg_functions.sqf";
+waitUntil {scriptDone _null};
 
 enableSaving[false, false];
 if (!isDedicated) then

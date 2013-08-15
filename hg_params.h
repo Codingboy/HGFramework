@@ -593,6 +593,22 @@ class Params
 		texts[] = {"0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "1"};
 		default = 75;
 	};
+	//how much a player can eat per second (decrease hunger)
+	class hg_eatValue
+	{
+		title = "hg_eatValue";
+		values[] = {1,2,3,4,5,6,7,8,9,10,100};
+		texts[] = {"1","2","3","4","5","6","7","8","9","10","100"};
+		default = 2;
+	};
+	//how much a player can drink per second (decrease thirst)
+	class hg_drinkValue
+	{
+		title = "hg_drinkValue";
+		values[] = {1,2,3,4,5,6,7,8,9,10,100};
+		texts[] = {"1","2","3","4","5","6","7","8","9","10","100"};
+		default = 2;
+	};
 
 
 

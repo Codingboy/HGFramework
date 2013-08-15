@@ -14,5 +14,6 @@ if (isServer) then
 	publicVariable "hg_tmp_box";
 	_null = [{waitUntil{!isNull hg_vas_box}; hg_vas_box addAction["<t color='#0000ff'>Virtual Ammobox</t>", "VAS\open.sqf", [], 0, false, true, "", "_this distance _target < 3"]; hg_vas_box = objNull;},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	waitUntil {scriptDone _null};
+	sleep 1;
 	_null = [_crate] execVM "HGF\handleBoxStart.sqf";
 };

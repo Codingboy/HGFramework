@@ -7,7 +7,7 @@ while {_thirst > 0 && player distance _crate < 3} do
 	if (_thirst > 0) then
 	{
 		_thirst = _thirst - hg_drinkValue;
-	}
+	};
 	if (_thirst < 0) then
 	{
 		_thirst = 0;

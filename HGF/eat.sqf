@@ -7,7 +7,7 @@ while {_hunger > 0 && player distance _crate < 3} do
 	if (_hunger > 0) then
 	{
 		_hunger = _hunger - hg_eatValue;
-	}
+	};
 	if (_hunger < 0) then
 	{
 		_hunger = 0;

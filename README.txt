@@ -1,3 +1,8 @@
+This document will no longer be updated.
+For more informations visit the wiki https://github.com/Codingboy/HGFramework/wiki
+
+
+
 HGFramework is designed to create missions that are similar to the concept of the Hunger Games.
 Book: http://www.suzannecollinsbooks.com/the_hunger_games_69765.htm
 Film: http://www.imdb.com/title/tt1392170/
@@ -85,6 +90,9 @@ Configurable
 	highly configurable via mission parameters in hg_params.h or even during missionselection
 HUD
 	minimal custom HUD to show informations like thirst/hunger/...
+Moveable explosives
+	explosives can be moved
+	drop them by pressing "space"
 
 
 
@@ -201,7 +209,7 @@ hungergames.paa is an edited version of http://wallpoh.com/wp-content/uploads/20
 License:
 HGFramework © 2013 Daniel Tkocz, used under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License:
 http://creativecommons.org/licenses/by-nc-sa/3.0/
-The files in =BTC=_revive, outlw_magRepack, scripts, cly_removedead, tao_foldmap_a3, VAS, reveal and all its subfolders and its files and files ending with .ogg or .paa are not affected by this licence. Contact the original authors on www.armaholic.com for more information or search for a LICENSE file in the folders.
+This license only affects files in missionfolders and the HGF folder in missionfolders.
 You are not allowed to change any variablename or variablevalue in "hg_variables.sqf" whos name starts with "hg_license_".
 You are not allowed to edit code if its execution is dependent of a variable which name starts with "hg_license_" if the variablevalue is false.
 
@@ -349,12 +357,13 @@ Changelog:
 	fixed: all players look at the weaponbox on teleport on dedicated server
 	drinking and eating needs some time
 
+0.8.2
+	removed HGFrameworkExample.Startis
+	renamed HGFrameworkExampleSmall.Startis to HGFrameworkExample.Startis
+	set up github project
+	issues moved to github
+
 
 
 Known Issues:
-when dropping an uniform into a crate it is duplicated (MINOR)
-clouds moving fast / skipping (MINOR)
-ai on dedicated server is not teleported if ordered to stop (WILL NOT FIX)
-lag when mines deactivated in editormode (WILL NOT FIX)
-supportbox contains items that are not added by my script when running on a dedicated server (WILL NOT FIX)
-supplybox contains items that are not added by my script when running on a dedicated server (WILL NOT FIX)
+https://github.com/Codingboy/HGFramework/issues?state=open

@@ -1,19 +1,8 @@
 private ["_markers","_pos","_angle","_units","_unitsRnd","_y","_z","_rnd","_coordX"];
 
-fnc_initPlayer =
-{
-	private["_null"];
-	_null = [_this select 0] execVM (_this select 1);
-	waitUntil {scriptDone _null};
-};
-
-hg_fnc_setPlayerDir =
-{
-	(_this select 0) setDir (_this select 1);
-};
-
 if (isServer) then
 {
+	waituntil {!isnil "hg_fnc_setPlayerDir"};
 	_markers = [];
 	for "_x" from 0 to count allMapMarkers-1 do
 	{

@@ -347,6 +347,7 @@ Changelog:
 	added toolkit to specialbox to use it with explosives interface
 	reduced loot in marksmanspecialbox
 	fixed: all players look at the weaponbox on teleport on dedicated server
+	drinking and eating needs some time
 
 
 

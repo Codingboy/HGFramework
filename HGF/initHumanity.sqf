@@ -188,7 +188,7 @@ if (!isDedicated) then
 			_player forceWalk _speedLimited;
 		};
 		_damage = damage _player;
-		if (random 1 <= _damage) then
+		if ((random 1)*10 < _damage) then
 		{
 			_infected = true;
 		};
@@ -203,12 +203,13 @@ if (!isDedicated) then
 		{
 			_damage = _damage + hg_infectionDamage;
 		};
+		_player setDamage _damage;
 		_prevDamage = _damage;
-		_player setVariable[format["hg_thirst_%1", name _player], _thirst, true];
-		_player setVariable[format["hg_hunger_%1", name _player], _hunger, true];
-		_player setVariable[format["hg_fatigue_%1", name _player], _fatigue, true];
-		_player setVariable[format["hg_damage_%1", name _player], _damage, true];
-		_player setVariable[format["hg_temperature_%1", name _player], _temperature, true];
+		_player setVariable[format["hg_thirst_%1", name _player], _thirst];
+		_player setVariable[format["hg_hunger_%1", name _player], _hunger];
+		_player setVariable[format["hg_fatigue_%1", name _player], _fatigue];
+		_player setVariable[format["hg_damage_%1", name _player], _damage];
+		_player setVariable[format["hg_temperature_%1", name _player], _temperature];
 		if (hg_showThirst == 1) then
 		{
 			((uiNamespace getVariable "hg_hud") displayCtrl 55511) ctrlSetText (format["%1", round(_thirst)]+"%");

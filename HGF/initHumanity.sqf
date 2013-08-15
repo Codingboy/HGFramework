@@ -12,6 +12,8 @@ if (!isDedicated) then
 	_thirstSpeedLimitation = false;
 	_hungerSpeedLimitation = false;
 	_fatigueSpeedLimitation = false;
+	_prevDamage = 0;
+	_infected = false;
 	while {alive _player} do
 	{
 		_playerWeight = 68;
@@ -123,32 +125,6 @@ if (!isDedicated) then
 		_hunger = _hunger + hg_hungerRate * _rate * _temperatureRateHunger;
 		_fatigue = _player getVariable (format["hg_fatigue_%1", name _player]);
 		_fatigue = _fatigue + hg_fatigueRate * _rate;
-		_damage = damage _player;
-		_player setVariable[format["hg_thirst_%1", name _player], _thirst, true];
-		_player setVariable[format["hg_hunger_%1", name _player], _hunger, true];
-		_player setVariable[format["hg_fatigue_%1", name _player], _fatigue, true];
-		_player setVariable[format["hg_damage_%1", name _player], _damage, true];
-		_player setVariable[format["hg_temperature_%1", name _player], _temperature, true];
-		if (hg_showThirst == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55511) ctrlSetText (format["%1", round(_thirst)]+"%");
-		};
-		if (hg_showHunger == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55512) ctrlSetText (format["%1", round(_hunger)]+"%");
-		};
-		if (hg_showFatigue == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55513) ctrlSetText (format["%1", round(_fatigue)]+"%");
-		};
-		if (hg_showDamage == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55514) ctrlSetText (format["%1", round((_damage)*100)]+"%");
-		};
-		if (hg_showTemperature == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55515) ctrlSetText (format["%1", (round(_temperature*10))/10]+"°C");
-		};
 
 		if (_temperature < hg_temperatureMin || _temperature > hg_temperatureMax) then
 		{
@@ -210,6 +186,48 @@ if (!isDedicated) then
 				_speedLimited = true;
 			};
 			_player forceWalk _speedLimited;
+		};
+		_damage = damage _player;
+		if (random 1 <= _damage) then
+		{
+			_infected = true;
+		};
+		if (_damage < _prevDamage) then
+		{
+			if ("Medikit" in backpackItems _player) then
+			{
+				_infected = false;
+			};
+		};
+		if (_infected) then
+		{
+			_damage = _damage + hg_infectionDamage;
+		};
+		_prevDamage = _damage;
+		_player setVariable[format["hg_thirst_%1", name _player], _thirst, true];
+		_player setVariable[format["hg_hunger_%1", name _player], _hunger, true];
+		_player setVariable[format["hg_fatigue_%1", name _player], _fatigue, true];
+		_player setVariable[format["hg_damage_%1", name _player], _damage, true];
+		_player setVariable[format["hg_temperature_%1", name _player], _temperature, true];
+		if (hg_showThirst == 1) then
+		{
+			((uiNamespace getVariable "hg_hud") displayCtrl 55511) ctrlSetText (format["%1", round(_thirst)]+"%");
+		};
+		if (hg_showHunger == 1) then
+		{
+			((uiNamespace getVariable "hg_hud") displayCtrl 55512) ctrlSetText (format["%1", round(_hunger)]+"%");
+		};
+		if (hg_showFatigue == 1) then
+		{
+			((uiNamespace getVariable "hg_hud") displayCtrl 55513) ctrlSetText (format["%1", round(_fatigue)]+"%");
+		};
+		if (hg_showDamage == 1) then
+		{
+			((uiNamespace getVariable "hg_hud") displayCtrl 55514) ctrlSetText (format["%1", round((_damage)*100)]+"%");
+		};
+		if (hg_showTemperature == 1) then
+		{
+			((uiNamespace getVariable "hg_hud") displayCtrl 55515) ctrlSetText (format["%1", (round(_temperature*10))/10]+"°C");
 		};
 		sleep 1;
 	};

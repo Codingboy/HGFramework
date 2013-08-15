@@ -1,3 +1,8 @@
+This document will no longer be updated.
+For more informations visit the wiki https://github.com/Codingboy/HGFramework/wiki
+
+
+
 HGFramework is designed to create missions that are similar to the concept of the Hunger Games.
 Book: http://www.suzannecollinsbooks.com/the_hunger_games_69765.htm
 Film: http://www.imdb.com/title/tt1392170/
@@ -355,6 +360,8 @@ Changelog:
 0.8.2
 	removed HGFrameworkExample.Startis
 	renamed HGFrameworkExampleSmall.Startis to HGFrameworkExample.Startis
+	set up github project
+	issues moved to github
 
 
 

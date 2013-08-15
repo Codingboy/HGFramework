@@ -609,6 +609,14 @@ class Params
 		texts[] = {"1","2","3","4","5","6","7","8","9","10","100"};
 		default = 2;
 	};
+	//how much damage the player gets per second if he has an infected wound
+	class hg_infectionDamage
+	{
+		title = "hg_infectionDamage";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"0","0.001","0.002","0.003","0.004","0.005","0.006","0.007","0.008","0.009","0.010"};
+		default = 1;
+	};
 
 
 

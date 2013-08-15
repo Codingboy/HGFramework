@@ -159,22 +159,22 @@ else
 
 if (isServer) then
 {
-	_null = [{hint "You have some time to group up.";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint (localize "STR_HINT_TEAMUP");},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	_initStartBox = [] execVM "HGF\initStartBox.sqf";
 	sleep hg_groupUpTime;
 	waitUntil {scriptDone _initBoxes};
 	waitUntil {scriptDone _initStartBox};
-	_null = [{hint "The arena is ready for you now.\nYou will be teleported in 5 seconds.\nDO NOT MOVE ANYLONGER!";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"5"+(localize "STR_HINT_TELEPORT_02")+".n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint "The arena is ready for you now.\nYou will be teleported in 4 seconds.\nDO NOT MOVE ANYLONGER!";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"4"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint "The arena is ready for you now.\nYou will be teleported in 3 seconds.\nDO NOT MOVE ANYLONGER!";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"3"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint "The arena is ready for you now.\nYou will be teleported in 2 seconds.\nDO NOT MOVE ANYLONGER!";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"2"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint "The arena is ready for you now.\nYou will be teleported in 1 seconds.\nDO NOT MOVE ANYLONGER!";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"1"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint "The arena is ready for you now.\nYou will be teleported in 0 seconds.\nDO NOT MOVE ANYLONGER!";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"0"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	initStartPlayer = [] execVM "HGF\initStartPlayer.sqf";
 	waitUntil {scriptDone initStartPlayer};
 	west setFriend[west, 0];
@@ -192,7 +192,7 @@ if (isServer) then
 	{
 		_null = [] execVM "HGF\initMarkPlayers.sqf";
 	};
-	_null = [{_null = [] execVM "HGF\initDeathzone.sqf"; _null = [] execVM "HGF\initHumanity.sqf"; _null = [1, hg_acceleration] execVM "HGF\initTimeAcceleration.sqf"; _null = [] execVM "HGF\initBorders.sqf"; if (hg_license_sounds) then {playSound "happyHungerGames";}; if (hg_markPlayers == 1) then {_null = [] execVM "HGF\initMarkPlayersClient.sqf";};},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{_null = [] execVM "HGF\initDeathzone.sqf"; _null = [] execVM "HGF\initHumanity.sqf"; _null = [1, hg_acceleration] execVM "HGF\initTimeAcceleration.sqf"; _null = [] execVM "HGF\initBorders.sqf"; if (hg_license_sounds) then {playSound (localize "STR_SOUND_HAPPYHUNGERGAMES");}; if (hg_markPlayers == 1) then {_null = [] execVM "HGF\initMarkPlayersClient.sqf";};},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 };
 
 hg_init = true;

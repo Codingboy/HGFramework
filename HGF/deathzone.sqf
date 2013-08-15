@@ -11,7 +11,7 @@ if (!isDedicated) then
 		_time = 0;
 		while {!_isIn} do
 		{
-			hint format["Return to game within %1 seconds!", (hg_bordersReturnTime - _time)];
+			hint format["%1%2%3", localize "STR_HINT_BORDER_01", (hg_bordersReturnTime - _time), localize "STR_HINT_BORDER_02"];
 			if (player in (list hg_deathzoneTrigger) || (vehicle player) in (list hg_deathzoneTrigger) || !alive player) then
 			{
 				_isIn = true;

@@ -359,9 +359,4 @@ Changelog:
 
 
 Known Issues:
-when dropping an uniform into a crate it is duplicated (MINOR)
-clouds moving fast / skipping (MINOR)
-ai on dedicated server is not teleported if ordered to stop (WILL NOT FIX)
-lag when mines deactivated in editormode (WILL NOT FIX)
-supportbox contains items that are not added by my script when running on a dedicated server (WILL NOT FIX)
-supplybox contains items that are not added by my script when running on a dedicated server (WILL NOT FIX)
+https://github.com/Codingboy/HGFramework/issues?state=open

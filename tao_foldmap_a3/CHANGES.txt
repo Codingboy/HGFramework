@@ -1,0 +1,17 @@
+﻿TODO
+- Better color scheme for map. Kinda hard to read in A3 compared to in ACE.
+
+2.1
+- Check for map in player's inventory. If player lacks a map, don't show the folding map.
+
+2.0
+- Made for Arma 3.
+- Fix for another flickering border corner case. I think the flickering bug is gone for good.
+- Map made slightly smaller on the screen.
+- Signed for online use.
+
+1.1
+- Fix flickering map under certain border cross conditions.
+
+1.0
+- Initial release.

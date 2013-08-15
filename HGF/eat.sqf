@@ -1,0 +1,1 @@
+player setVariable[format["hg_hunger_%1", name player, true], 0];

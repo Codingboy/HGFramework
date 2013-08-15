@@ -1,0 +1,11 @@
+private["_windDir"];
+_windDir = "";
+if(windDir >= 340 && windDir <= 360 || windDir >= 0 && windDir < 20) then {_windDir = "North";};
+if(windDir >= 20 && windDir < 60) then {_windDir = "North East";};
+if(windDir >= 60 && windDir < 110) then {_windDir = "East";};
+if(windDir >= 110 && windDir < 160) then {_windDir = "South East";};
+if(windDir >= 160 && windDir < 200) then {_windDir = "South";};
+if(windDir >= 200 && windDir < 250) then {_windDir = "South West";};
+if(windDir >= 250 && windDir < 290) then {_windDir = "West";};
+if(windDir >= 290 && windDir < 340) then {_windDir = "North West";};
+hintSilent format ["Windstatistics\nDirection: %1\nStrength: %2",_windDir, windStr];

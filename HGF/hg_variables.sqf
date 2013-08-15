@@ -63,7 +63,7 @@ hg_licence_jump = true;//official given
 hg_licence_reveal = true;//official given
 hg_license_damagesystem = true;//not responding
 hg_license_windsystem = true;//official given
-hg_license_explosivesinterface = true;
+hg_license_explosivesinterface = true;//official given
 /*
  *
  *

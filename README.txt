@@ -85,6 +85,9 @@ Configurable
 	highly configurable via mission parameters in hg_params.h or even during missionselection
 HUD
 	minimal custom HUD to show informations like thirst/hunger/...
+Moveable explosives
+	explosives can be moved
+	drop them by pressing "space"
 
 
 

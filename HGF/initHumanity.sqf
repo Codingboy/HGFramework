@@ -204,7 +204,7 @@ if (!isDedicated) then
 			_player forceWalk _speedLimited;
 		};
 		_damage = damage _player;
-		if ((random 1) < _damage*hg_infectionChance*) then
+		if ((random 1) < _damage*hg_infectionChance) then
 		{
 			_infected = true;
 		};

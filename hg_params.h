@@ -262,7 +262,7 @@ class Params
 		title = "hg_vasOnStart";
 		values[] = {0,1};
 		texts[] = {"false","true"};
-		default = 0;
+		default = 1;
 	};
 	//1 -> vas paradropped as special loot crate
 	class hg_vasOnParadrop

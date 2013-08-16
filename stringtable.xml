@@ -9,36 +9,36 @@
 		<German>BEWEG DICH NICHT MEHR!</German>
 	</Key>
 	<Key ID="STR_HINT_TELEPORT_01">
-		<Original>You will be teleported in </Original>
-		<German>Du wirst in </German>
+		<Original>You will be teleported in&#160;</Original>
+		<German>Du wirst in&#160;</German>
 	</Key>
 	<Key ID="STR_HINT_TELEPORT_02">
-		<Original> seconds.</Original>
-		<German> Sekunden teleportiert.</German>
+		<Original>&#160;seconds.</Original>
+		<German>&#160;Sekunden teleportiert.</German>
 	</Key>
 	<Key ID="STR_HINT_TEAMUP">
 		<Original>You have some time to team up.</Original>
 		<German>Du hast etwas Zeit um ein team zu bilden.</German>
 	</Key>
 	<Key ID="STR_HINT_BORDER_01">
-		<Original>Return to arena within </Original>
-		<German>Begib dich innerhalb von </German>
+		<Original>Return to arena within&#160;</Original>
+		<German>Begib dich innerhalb von&#160;</German>
 	</Key>
 	<Key ID="STR_HINT_BORDER_02">
-		<Original> seconds!</Original>
-		<German> Sekunden zurück zur Arena!</German>
+		<Original>&#160;seconds!</Original>
+		<German>&#160;Sekunden zurück zur Arena!</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_01">
-		<Original>You have </Original>
-		<German>Du hast </German>
+		<Original>You have&#160;</Original>
+		<German>Du hast&#160;</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_02">
-		<Original> minutes to reach the safe zone: </Original>
-		<German> Minuten um die sichere Zone "</German>
+		<Original>&#160;minutes to reach the safe zone &quot;</Original>
+		<German>&#160;Minuten um die sichere Zone &quot;</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_03">
-		<Original></Original>
-		<German>" zu erreichen.</German>
+		<Original>&quot;.</Original>
+		<German>&quot; zu erreichen.</German>
 	</Key>
 	<Key ID="STR_CUT_THIRST">
 		<Original>Thirst:</Original>

@@ -262,7 +262,7 @@ class Params
 		title = "hg_vasOnStart";
 		values[] = {0,1};
 		texts[] = {"false","true"};
-		default = 1;
+		default = 0;
 	};
 	//1 -> vas paradropped as special loot crate
 	class hg_vasOnParadrop
@@ -616,6 +616,14 @@ class Params
 		values[] = {0,1,2,3,4,5,6,7,8,9,10};
 		texts[] = {"0","0.001","0.002","0.003","0.004","0.005","0.006","0.007","0.008","0.009","0.010"};
 		default = 1;
+	};
+	//chance (in percent) to get an infected wound per damagepoint
+	class hg_infectionChance
+	{
+		title = "hg_infectionChance";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1.0"};
+		default = 5;
 	};
 
 

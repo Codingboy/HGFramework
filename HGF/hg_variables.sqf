@@ -17,6 +17,7 @@ hg_temperatureMax = hg_temperatureMax / 10;
 hg_temperatureBadFactor = hg_temperatureBadFactor / 10;
 hg_damagesystemValue = hg_damagesystemValue / 100;
 hg_infectionDamage = hg_infectionDamage / 1000;
+hg_infectionChance = hg_infectionChance / 10;
 
 hg_startColor = "ColorBlack";
 hg_crateColor = "ColorOrange";

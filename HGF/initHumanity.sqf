@@ -68,6 +68,10 @@ if (!isDedicated) then
 				_temperature = _temperature - hg_temperatureBadFactor*2*hg_temperatureChangeValue;
 			};
 		};
+		if (_infected) then
+		{
+			_temperature = _temperature + 5*hg_temperatureChangeValue;
+		};
 		if (surfaceIsWater[(getPos _player) select 0, (getPos _player) select 1]) then
 		{
 			if (uniform _player == "U_B_Wetsuit") then
@@ -188,7 +192,7 @@ if (!isDedicated) then
 			_player forceWalk _speedLimited;
 		};
 		_damage = damage _player;
-		if ((random 1)*10 < _damage) then
+		if ((random 1) < _damage*hg_infectionChance*) then
 		{
 			_infected = true;
 		};

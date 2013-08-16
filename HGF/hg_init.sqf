@@ -164,7 +164,7 @@ if (isServer) then
 	sleep hg_groupUpTime;
 	waitUntil {scriptDone _initBoxes};
 	waitUntil {scriptDone _initStartBox};
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"5"+(localize "STR_HINT_TELEPORT_02")+".n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"5"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
 	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"4"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;

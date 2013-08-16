@@ -26,10 +26,16 @@ class CfgSounds
 		sound[] = {HGF\countdown.ogg, db + 0, 1.0};
 		titles[] = {0, ""};
 	};
-	class happyHungerGames
+	class eng_HappyHungerGames
 	{
-		name = "happyHungerGames";
-		sound[] = {HGF\happyHungerGames.ogg, db + 0, 1.0};
+		name = "eng_HappyHungerGames";
+		sound[] = {HGF\eng_HappyHungerGames.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+	class ger_HappyHungerGames
+	{
+		name = "ger_HappyHungerGames";
+		sound[] = {HGF\ger_HappyHungerGames.ogg, db + 0, 1.0};
 		titles[] = {0, ""};
 	};
 };

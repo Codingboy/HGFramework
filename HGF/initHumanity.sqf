@@ -3,19 +3,31 @@ private ["_rate","_temperature","_fire","_temperatureRateHunger","_temperatureRa
 if (!isDedicated) then
 {
 	private["_player"];
+	_player addEventHandler ["HandleHeal",
+	{
+		_healed = _this select 0;
+		_healer = _this select 1;
+		if ("Medikit" in backpackItems _healer) then
+		{
+			_healed setVariable[format["hg_infected_%1", name _player], false, true];
+		};
+		false;
+	}];
 	_player = player;
-	_player setVariable[format["hg_thirst_%1", name _player], 0, true];
-	_player setVariable[format["hg_hunger_%1", name _player], 0, true];
-	_player setVariable[format["hg_fatigue_%1", name _player], 0, true];
-	_player setVariable[format["hg_damage_%1", name _player], 0, true];
-	_player setVariable[format["hg_temperature_%1", name _player], hg_temperatureAvg, true];
+	_player setVariable[format["hg_thirst_%1", name _player], 0];
+	_player setVariable[format["hg_hunger_%1", name _player], 0];
+	_player setVariable[format["hg_fatigue_%1", name _player], 0];
+	_player setVariable[format["hg_damage_%1", name _player], 0];
+	_player setVariable[format["hg_temperature_%1", name _player], hg_temperatureAvg];
+	_player setVariable[format["hg_infected_%1", name _player], false];
 	_thirstSpeedLimitation = false;
 	_hungerSpeedLimitation = false;
 	_fatigueSpeedLimitation = false;
 	_prevDamage = 0;
-	_infected = false;
+	_prevInfected = false;
 	while {alive _player} do
 	{
+		_infected = _player getVariable [format["hg_infected_%1", name _player]];
 		_playerWeight = 68;
 		_weight = _playerWeight + (loadAbs _player)/10;
 		_rate = 1 + (_weight/_playerWeight)*((speed _player)/10)*((speed _player)/10);
@@ -67,6 +79,10 @@ if (!isDedicated) then
 			{
 				_temperature = _temperature - hg_temperatureBadFactor*2*hg_temperatureChangeValue;
 			};
+		};
+		if (_infected) then
+		{
+			_temperature = _temperature + 5*hg_temperatureChangeValue;
 		};
 		if (surfaceIsWater[(getPos _player) select 0, (getPos _player) select 1]) then
 		{
@@ -188,7 +204,7 @@ if (!isDedicated) then
 			_player forceWalk _speedLimited;
 		};
 		_damage = damage _player;
-		if ((random 1)*10 < _damage) then
+		if ((random 1) < _damage*hg_infectionChance*) then
 		{
 			_infected = true;
 		};
@@ -205,11 +221,13 @@ if (!isDedicated) then
 		};
 		_player setDamage _damage;
 		_prevDamage = _damage;
+		_player setVariable[format["hg_infected_%1", name _player], _infected, (_infected != _prevInfected)];
 		_player setVariable[format["hg_thirst_%1", name _player], _thirst];
 		_player setVariable[format["hg_hunger_%1", name _player], _hunger];
 		_player setVariable[format["hg_fatigue_%1", name _player], _fatigue];
 		_player setVariable[format["hg_damage_%1", name _player], _damage];
 		_player setVariable[format["hg_temperature_%1", name _player], _temperature];
+		_prevInfected = _infected;
 		if (hg_showThirst == 1) then
 		{
 			((uiNamespace getVariable "hg_hud") displayCtrl 55511) ctrlSetText (format["%1", round(_thirst)]+"%");

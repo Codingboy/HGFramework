@@ -507,7 +507,7 @@ class RscTitles
 			class hg_thirst_key : RscText
 			{
 				idc = -1;
-				text = "Thirst:";
+				text = "$STR_CUT_THIRST";
 				x = 1.3975;
 				y = 1.16;
 				w = 0.12;

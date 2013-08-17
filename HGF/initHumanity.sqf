@@ -3,6 +3,7 @@ private ["_rate","_temperature","_fire","_temperatureRateHunger","_temperatureRa
 if (!isDedicated) then
 {
 	private["_player"];
+	_player = player;
 	_player addEventHandler ["HandleHeal",
 	{
 		_healed = _this select 0;
@@ -13,7 +14,6 @@ if (!isDedicated) then
 		};
 		false;
 	}];
-	_player = player;
 	_player setVariable[format["hg_thirst_%1", name _player], 0];
 	_player setVariable[format["hg_hunger_%1", name _player], 0];
 	_player setVariable[format["hg_fatigue_%1", name _player], 0];

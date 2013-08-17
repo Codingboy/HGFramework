@@ -1,11 +1,7 @@
-private ["_inits","_boxesPos","_rnd1","_rnd2","_box","_para","_active"];
-hg_fnc_spawnSpecialCrate = 
-{
-	_null = [_this select 0] execVM (_this select 1);
-};
+private ["_inits","_boxesPos","_rnd1","_rnd2","_active"];
 if (isServer) then
 {
-	_inits = ["HGF\marksmanSpecialBox.sqf"];
+	_inits = ["HGF\marksmanSpecialBox.sqf","HGF\diveSpecialBox.sqf","HGF\explosivesSpecialBox.sqf","HGF\medicSpecialBox.sqf","HGF\uavSpecialBox.sqf","HGF\grenadierSpecialBox.sqf","HGF\mgSpecialBox.sqf"];
 	if (hg_license_vas && hg_vasOnParadrop == 1) then
 	{
 		_inits = _inits + ["HGF\vas.sqf"];
@@ -28,7 +24,7 @@ if (isServer) then
 	{
 		_rnd1 = floor(random (count _inits));
 		_rnd2 = floor(random (count _boxesPos));
-		[[_boxesPos select _rnd2,_inits select _rnd1], "hg_fnc_spawnSpecialCrate",true,true] spawn BIS_fnc_MP;
+		[_boxesPos select _rnd2] execVM (_inits select _rnd1);
 		sleep hg_specialCrateDelay;
 	};
 };

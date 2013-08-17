@@ -1356,7 +1356,7 @@ class Mission
 		};
 		class Item134
 		{
-			position[]={3090.947,4.0424581,5868.4722};
+			position[]={3085.0347,4.7278028,5859.9995};
 			name="F_2";
 			type="hd_dot";
 			colorName="ColorRed";

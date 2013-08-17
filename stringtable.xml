@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="HGFramework">
 	<Key ID="STR_HINT_ARENAREADY">
 		<Original>The arena is ready for you now.</Original>
@@ -91,6 +91,14 @@
 	<Key ID="STR_BRIEF_HANGARGAMES">
 		<Original>Hangar Games</Original>
 		<German>Hangar Spiele</German>
+	</Key>
+	<Key ID="STR_HINT_INFECTED">
+		<Original>Your wounds got infected!</Original>
+		<German>Deine Wunden haben sich entzündet!</German>
+	</Key>
+	<Key ID="STR_HINT_INFECTIONHEALED">
+		<Original>Your infected wounds have been treated.</Original>
+		<German>Deine entzündeten Wunden wurden behandelt.</German>
 	</Key>
 </Project>
 <Project name="Virtual Ammobox System">

@@ -27,7 +27,7 @@ if (!isDedicated) then
 	_prevInfected = false;
 	while {alive _player} do
 	{
-		_infected = _player getVariable [format["hg_infected_%1", name _player]];
+		_infected = _player getVariable [format["hg_infected_%1", name _player], false];
 		_playerWeight = 68;
 		_weight = _playerWeight + (loadAbs _player)/10;
 		_rate = 1 + (_weight/_playerWeight)*((speed _player)/10)*((speed _player)/10);
@@ -204,7 +204,7 @@ if (!isDedicated) then
 			_player forceWalk _speedLimited;
 		};
 		_damage = damage _player;
-		if ((random 1) < _damage*hg_infectionChance) then
+		if (!_infected && (random 1) < _damage*hg_infectionChance) then
 		{
 			_infected = true;
 		};
@@ -221,7 +221,20 @@ if (!isDedicated) then
 		};
 		_player setDamage _damage;
 		_prevDamage = _damage;
-		_player setVariable[format["hg_infected_%1", name _player], _infected, (_infected != _prevInfected)];
+		_infectedChanged = false;
+		if ((_infected && !_prevInfected) || (!_infected && _prevInfected)) then
+		{
+			_infectedChanged = true;
+			if (_infected) then
+			{
+				hint (localize "STR_HINT_INFECTED");
+			}
+			else
+			{
+				hint (localize "STR_HINT_INFECTIONHEALED");
+			};
+		};
+		_player setVariable[format["hg_infected_%1", name _player], _infected, _infectedChanged];
 		_player setVariable[format["hg_thirst_%1", name _player], _thirst];
 		_player setVariable[format["hg_hunger_%1", name _player], _hunger];
 		_player setVariable[format["hg_fatigue_%1", name _player], _fatigue];

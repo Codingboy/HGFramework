@@ -158,7 +158,7 @@ class Params
 		title = "hg_specialCrateDropHeight";
 		values[] = {500, 1000, 1500, 2000, 2500, 3000};
 		texts[] = {"500", "1000", "1500", "2000", "2500", "3000"};
-		default = 100;
+		default = 2000;
 	};
 	//time between players are teleported to the arena and the first spawn of a special loot crate
 	class hg_specialCrateFirstDelay

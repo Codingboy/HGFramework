@@ -594,24 +594,6 @@ class RscTitles
 				w = 0.07;
 				h = 0.04;
 			};
-			/*class hg_temperature_key : RscText
-			{
-				idc = -1;
-				text = "Temperature:";
-				x = 1.4375;
-				y = 1.00;
-				w = 0.1;
-				h = 0.04;
-			};
-			class hg_temperature_value : RscText
-			{
-				idc = 55515;
-				text = "?";
-				x = 1.5375;
-				y = 1.00;
-				w = 0.05;
-				h = 0.04;
-			};*/
 		};
 	};
 };

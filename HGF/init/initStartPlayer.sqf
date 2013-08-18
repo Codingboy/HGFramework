@@ -2,7 +2,7 @@ private ["_markers","_pos","_angle","_units","_unitsRnd","_y","_z","_rnd","_coor
 
 if (isServer) then
 {
-	waituntil {!isnil "hg_fnc_setPlayerDir"};
+	waituntil {!isnil "hg_fnc_setDir"};
 	_markers = [];
 	for "_x" from 0 to count allMapMarkers-1 do
 	{
@@ -34,7 +34,7 @@ if (isServer) then
 		(_unitsRnd select _i) disableAI "MOVE";
 		(_unitsRnd select _i) setPos [_coordX - hg_startRadius * (sin _angle) * 1, _y - hg_startRadius * (cos _angle) * 1, _z];
 		(_unitsRnd select _i) setDir _angle;
-		[[_unitsRnd select _i,_angle], "hg_fnc_setPlayerDir",true,true] spawn BIS_fnc_MP;
+		[[_unitsRnd select _i,_angle], "hg_fnc_setDir",true,true] spawn BIS_fnc_MP;
 		
 		_angle = _angle + 360.0/count hg_players;
 	};

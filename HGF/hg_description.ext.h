@@ -1,7 +1,7 @@
 respawn = "BIRD";
 respawnDelay = 0;
 onLoadName = "$STR_BRIEF_HANGARGAMES";
-loadScreen = "HGF\hungergames1920x960.jpg";
+loadScreen = "HGF\media\hungergames1920x960.jpg";
 disableChannels[]={0,1,2,3,4,6};
 disabledAI = 1;
 debriefing = 1;
@@ -23,8 +23,8 @@ class CfgDebriefing
 		title = "$STR_DEBR_SURVIVED";
 		subtitle = "$STR_DEBR_SURVIVEDSUBTITLE";
 		description = "$STR_DEBR_SURVIVEDDESCRIPTION";
-		pictureBackground = "HGF\hungergames1920x960.jpg";
-		picture = "HGF\hungergames1024x1024.jpg";
+		pictureBackground = "HGF\media\hungergames1920x960.jpg";
+		picture = "HGF\media\hungergames1024x1024.jpg";
 		pictureColor[] = {1.0,1.0,1.0,1.0};
 	};
 	class Killed
@@ -32,8 +32,8 @@ class CfgDebriefing
 		title = "$STR_DEBR_KILLED";
 		subtitle = "$STR_DEBR_KILLEDSUBTITLE";
 		description = "$STR_DEBR_KILLEDDESCRIPTION";
-		pictureBackground = "HGF\hungergames1920x960.jpg";
-		picture = "HGF\hungergames1024x1024.jpg";
+		pictureBackground = "HGF\media\hungergames1920x960.jpg";
+		picture = "HGF\media\hungergames1024x1024.jpg";
 		pictureColor[] = {1.0,1.0,1.0,1.0};
 	};
 };

@@ -21,12 +21,12 @@ if (!isDedicated) then
 	player createDiaryRecord["Info", ["Features", "press ctrl+R to repack magazines"]];
 	player createDiaryRecord["Info", ["Features", "press shift+M to show a little map"]];
 
-	[] execVM "HGF\initIDs.sqf";
+	[] execVM "HGF\init\initIDs.sqf";
 	if (hg_license_sounds) then
 	{
 		player addMPEventHandler ["mpkilled", {disableUserInput false; playSound "cannon";}];
 	};
-	player addAction["sleep", {[player] execVM "HGF\sleep.sqf";}, nil, 0, false, true, "", "stance player == ""PRONE"" && vehicle player == player"];
+	player addAction["sleep", {[player] execVM "HGF\humanity\sleep.sqf";}, nil, 0, false, true, "", "stance player == ""PRONE"" && vehicle player == player"];
 	if (hg_licence_reveal) then
 	{
 		[] execVM "reveal\reveal.sqf";
@@ -66,10 +66,10 @@ if (hg_license_windsystem && hg_windsystem==1) then
 	if (!isDedicated) then
 	{
 		execVM "windsystem\bulletWindClient.sqf";
-		player addAction ["show windinformation", "HGF\windinformation.sqf", nil, 0, false, true, "", ""];
+		player addAction ["show windinformation", "HGF\other\windinformation.sqf", nil, 0, false, true, "", ""];
 	};
 };
-_initBoxes = [] execVM "HGF\initBoxes.sqf";
+_initBoxes = [] execVM "HGF\init\initBoxes.sqf";
 cutRsc["hg_hud", "PLAIN"];
 
 if (hg_startHour == -1) then
@@ -145,7 +145,7 @@ if (isServer) then
 {
 	waitUntil {!isNil "hg_players"};
 	{
-		_null = [_x] execVM "HGF\initPlayer.sqf";
+		_null = [_x] execVM "HGF\init\initPlayer.sqf";
 	}
 	forEach hg_players;
 }
@@ -153,14 +153,14 @@ else
 {
 	if (side player == west) then
 	{
-		_null = [player] execVM "HGF\initPlayer.sqf";
+		_null = [player] execVM "HGF\init\initPlayer.sqf";
 	};
 };
 
 if (isServer) then
 {
 	_null = [{hint (localize "STR_HINT_TEAMUP");},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
-	_initStartBox = [] execVM "HGF\initStartBox.sqf";
+	_initStartBox = [] execVM "HGF\init\initStartBox.sqf";
 	sleep hg_groupUpTime;
 	waitUntil {scriptDone _initBoxes};
 	waitUntil {scriptDone _initStartBox};
@@ -175,24 +175,23 @@ if (isServer) then
 	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"1"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
 	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"0"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
-	initStartPlayer = [] execVM "HGF\initStartPlayer.sqf";
+	initStartPlayer = [] execVM "HGF\init\initStartPlayer.sqf";
 	waitUntil {scriptDone initStartPlayer};
 	west setFriend[west, 0];
-	_null = [] execVM "HGF\deleteSpecialMarkers.sqf";
-	_null = [] execVM "HGF\initSpecialBoxes.sqf";
-	_null = [] execVM "HGF\initVehicles.sqf";
-	_null = [] execVM "HGF\initBoats.sqf";
-	_null = [] execVM "HGF\initHelis.sqf";
-	_null = [] execVM "HGF\initRating.sqf";
-	_null = [] execVM "HGF\initMines.sqf";
-	_null = [] execVM "HGF\initMissionEnd.sqf";
-	_null = [] execVM "HGF\initStartBoxDespawn.sqf";
+	_null = [] execVM "HGF\other\deleteSpecialMarkers.sqf";
+	_null = [] execVM "HGF\init\initSpecialBoxes.sqf";
+	_null = [] execVM "HGF\init\initVehicles.sqf";
+	_null = [] execVM "HGF\init\initBoats.sqf";
+	_null = [] execVM "HGF\init\initHelis.sqf";
+	_null = [] execVM "HGF\init\initMines.sqf";
+	_null = [] execVM "HGF\init\initMissionEnd.sqf";
+	_null = [] execVM "HGF\init\initStartBoxDespawn.sqf";
 	estimatedTimeLeft (hg_deathZoneWarningTime+hg_deathZoneDelay);
 	if (hg_markPlayers == 1) then
 	{
-		_null = [] execVM "HGF\initMarkPlayers.sqf";
+		_null = [] execVM "HGF\init\initMarkPlayers.sqf";
 	};
-	_null = [{_null = [] execVM "HGF\initDeathzone.sqf"; _null = [] execVM "HGF\initHumanity.sqf"; _null = [1, hg_acceleration] execVM "HGF\initTimeAcceleration.sqf"; _null = [] execVM "HGF\initBorders.sqf"; if (hg_license_sounds) then {playSound (localize "STR_SOUND_HAPPYHUNGERGAMES");}; if (hg_markPlayers == 1) then {_null = [] execVM "HGF\initMarkPlayersClient.sqf";};},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{_null = [] execVM "HGF\init\initDeathzone.sqf"; _null = [] execVM "HGF\init\initHumanity.sqf"; _null = [1, hg_acceleration] execVM "HGF\init\initTimeAcceleration.sqf"; _null = [] execVM "HGF\init\initBorders.sqf"; if (hg_license_sounds) then {playSound (localize "STR_SOUND_HAPPYHUNGERGAMES");}; if (hg_markPlayers == 1) then {_null = [] execVM "HGF\init\initMarkPlayersClient.sqf";};},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 };
 
 hg_init = true;

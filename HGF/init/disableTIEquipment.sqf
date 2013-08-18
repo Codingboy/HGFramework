@@ -5,7 +5,7 @@ if (isServer && hg_disableTIEquipment == 0) then
 		{
 			_x disableTIEquipment true;
 		}
-		forEach allUnitsUav;
+		forEach (allUnitsUav + vehicles);
 		sleep 5;
 	};
 };

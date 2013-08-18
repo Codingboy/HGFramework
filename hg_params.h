@@ -625,7 +625,7 @@ class Params
 		texts[] = {"0","0.001","0.002","0.003","0.004","0.005","0.006","0.007","0.008","0.009","0.010"};
 		default = 1;
 	};
-	//chance (in percent) to get an infected wound per damagepoint
+	//chance (in percent) to get an infected wound per damagepoint per second
 	class hg_infectionChance
 	{
 		title = "hg_infectionChance";

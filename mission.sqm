@@ -5,11 +5,15 @@ class Mission
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_map_stratis",
-		"A3_Characters_F_Civil"
+		"A3_Characters_F_Civil",
+		"A3_Structures_F_Items_Vessels",
+		"A3_Structures_F_Civ_Market"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
+		"A3_Structures_F_Items_Vessels",
+		"A3_Structures_F_Civ_Market",
 		"a3_map_stratis"
 	};
 	randomSeed=1549745;
@@ -411,6 +415,90 @@ class Mission
 					skill=0.60000002;
 				};
 			};
+		};
+	};
+	class Vehicles
+	{
+		items=10;
+		class Item0
+		{
+			position[]={5369.5044,2.2311902,3749.916};
+			id=24;
+			side="EMPTY";
+			vehicle="Land_WaterBarrel_F";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={5371.3223,2.1757665,3752.4722};
+			id=25;
+			side="EMPTY";
+			vehicle="Land_Sacks_goods_F";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={5380.3379,1.4718946,3752.5391};
+			id=26;
+			side="EMPTY";
+			vehicle="Land_WaterBarrel_F";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={5373.5044,2.6189675,3758.7002};
+			id=27;
+			side="EMPTY";
+			vehicle="Land_WaterBarrel_F";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={5365.0879,3.2669458,3754.7451};
+			id=28;
+			side="EMPTY";
+			vehicle="Land_WaterBarrel_F";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={5374.7129,2.0998607,3754.4536};
+			id=29;
+			side="EMPTY";
+			vehicle="Land_WaterBarrel_F";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={5369.9053,2.7475855,3756.3442};
+			id=30;
+			side="EMPTY";
+			vehicle="Land_Sacks_goods_F";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={5376.9473,2.255631,3757.7593};
+			id=31;
+			side="EMPTY";
+			vehicle="Land_Sacks_goods_F";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={5375.0303,1.8350903,3750.7241};
+			id=32;
+			side="EMPTY";
+			vehicle="Land_Sacks_goods_F";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={5365.6138,2.7898827,3751.5151};
+			id=33;
+			side="EMPTY";
+			vehicle="Land_Sacks_goods_F";
+			skill=0.60000002;
 		};
 	};
 	class Markers

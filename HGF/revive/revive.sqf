@@ -57,6 +57,5 @@ if (!isDedicated) then
 	if (player getVariable [format["dead_", name player], 0] == 0 && _dead getVariable [format["dead_", name _dead], 0] == 1) then
 	{
 		_dead setVariable [format["dead_", name _dead], 0, true];
-		_dead setDamage 0.75;
 	};
 };

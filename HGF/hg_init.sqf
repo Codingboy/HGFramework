@@ -186,6 +186,7 @@ if (isServer) then
 	_null = [] execVM "HGF\init\initMines.sqf";
 	_null = [] execVM "HGF\init\initMissionEnd.sqf";
 	_null = [] execVM "HGF\init\initStartBoxDespawn.sqf";
+	_null = [] execVM "HGF\init\disableTIEquipment.sqf";
 	estimatedTimeLeft (hg_deathZoneWarningTime+hg_deathZoneDelay);
 	if (hg_markPlayers == 1) then
 	{

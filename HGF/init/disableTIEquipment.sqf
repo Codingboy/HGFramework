@@ -6,6 +6,6 @@ if (isServer && hg_disableTIEquipment == 0) then
 			_x disableTIEquipment true;
 		}
 		forEach allUnitsUav;
-		sleep 1;
+		sleep 5;
 	};
 };

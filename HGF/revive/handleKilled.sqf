@@ -36,6 +36,7 @@ if (!isDedicated) then
 	else
 	{
 		player setDamage 0.75;
+		player setVariable [format["dead_dmg_", name player], 0, true];
 	};
 
 	if (hg_license_fadeToBlack) then

@@ -49,12 +49,12 @@ if (!isDedicated) then
 	_dead = _this select 0;
 	_reviver = _this select 1;
 	_time = 0;
-	while {_time < hg_reviveTime && player getVariable [format["dead_", name player], 0] == 0 && _dead getVariable [format["dead_", name _dead], 0] == 1} do
+	while {_time < hg_reviveTime && player getVariable [format["dead_", name player], 0] == 0 && _dead getVariable [format["dead_", name _dead], 0] == 1 && player distance _dead <= 3 && ("Medikit" in backpackItems _dead || "Medikit" in backpackItems player)} do
 	{
 		sleep 0.1;
 		_time = _time + 0.1;
 	};
-	if (player getVariable [format["dead_", name player], 0] == 0 && _dead getVariable [format["dead_", name _dead], 0] == 1) then
+	if (player getVariable [format["dead_", name player], 0] == 0 && _dead getVariable [format["dead_", name _dead], 0] == 1 && player distance _dead <= 3 && ("Medikit" in backpackItems _dead || "Medikit" in backpackItems player)) then
 	{
 		_dead setVariable [format["dead_", name _dead], 0, true];
 	};

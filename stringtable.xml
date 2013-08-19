@@ -100,6 +100,26 @@
 		<Original>Your infected wounds have been treated.</Original>
 		<German>Deine entzündeten Wunden wurden behandelt.</German>
 	</Key>
+	<Key ID="STR_ACT_DRINK">
+		<Original>drink</Original>
+		<German>trinken</German>
+	</Key>
+	<Key ID="STR_ACT_EAT">
+		<Original>eat</Original>
+		<German>essen</German>
+	</Key>
+	<Key ID="STR_ACT_SLEEP">
+		<Original>sleep</Original>
+		<German>schlafen</German>
+	</Key>
+	<Key ID="STR_ACT_REVIVE">
+		<Original>revive</Original>
+		<German>wiederbeleben</German>
+	</Key>
+	<Key ID="STR_ACT_KILL">
+		<Original>kill</Original>
+		<German>töten</German>
+	</Key>
 </Project>
 <Project name="Virtual Ammobox System">
 	<Package name="Main">

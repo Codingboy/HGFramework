@@ -26,7 +26,7 @@ if (!isDedicated) then
 	{
 		player addMPEventHandler ["mpkilled", {disableUserInput false; playSound "cannon"; (uiNamespace getVariable "hg_hud") closeDisplay 0;}];
 	};
-	player addAction["sleep", {[player] execVM "HGF\humanity\sleep.sqf";}, nil, 0, false, true, "", "stance player == ""PRONE"" && vehicle player == player"];
+	player addAction[localize "STR_ACT_SLEEP", {[player] execVM "HGF\humanity\sleep.sqf";}, nil, 0, false, true, "", "stance player == ""PRONE"" && vehicle player == player"];
 	if (hg_licence_reveal) then
 	{
 		[] execVM "reveal\reveal.sqf";

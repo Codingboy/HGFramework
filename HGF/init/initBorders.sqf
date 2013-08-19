@@ -78,7 +78,7 @@ if (!isDedicated && (hg_bordersActive == 1)) then
 		_time = 0;
 		while {!_isIn} do
 		{
-			hint format["%1%2%3", localize "STR_HINT_BORDER_01", (hg_bordersReturnTime - _time), localize "STR_HINT_BORDER_02"];
+			hint format[localize "STR_HINT_BORDER", (hg_bordersReturnTime - _time)];
 			{
 				if (player in (list _x) || (vehicle player) in (list _x) || !alive player) then
 				{

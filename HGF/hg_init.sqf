@@ -66,7 +66,7 @@ if (hg_license_windsystem && hg_windsystem==1) then
 	if (!isDedicated) then
 	{
 		execVM "windsystem\bulletWindClient.sqf";
-		player addAction ["show windinformation", "HGF\other\windinformation.sqf", nil, 0, false, true, "", ""];
+		player addAction [localize "STR_ACT_WINDINFORMATION", "HGF\other\windinformation.sqf", nil, 0, false, true, "", ""];
 	};
 };
 _initBoxes = [] execVM "HGF\init\initBoxes.sqf";
@@ -164,17 +164,17 @@ if (isServer) then
 	sleep hg_groupUpTime;
 	waitUntil {scriptDone _initBoxes};
 	waitUntil {scriptDone _initStartBox};
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"5"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "5"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"4"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "4"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"3"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "3"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"2"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "2"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"1"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "1"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
-	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+(localize "STR_HINT_TELEPORT_01")+"0"+(localize "STR_HINT_TELEPORT_02")+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "0"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	initStartPlayer = [] execVM "HGF\init\initStartPlayer.sqf";
 	waitUntil {scriptDone initStartPlayer};
 	west setFriend[west, 0];

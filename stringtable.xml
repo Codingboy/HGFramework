@@ -8,37 +8,29 @@
 		<Original>DO NOT MOVE ANYLONGER!</Original>
 		<German>BEWEG DICH NICHT MEHR!</German>
 	</Key>
-	<Key ID="STR_HINT_TELEPORT_01">
-		<Original>You will be teleported in&#160;</Original>
-		<German>Du wirst in&#160;</German>
-	</Key>
-	<Key ID="STR_HINT_TELEPORT_02">
-		<Original>&#160;seconds.</Original>
-		<German>&#160;Sekunden teleportiert.</German>
+	<Key ID="STR_HINT_TELEPORT">
+		<Original>You will be teleported in %1 seconds.</Original>
+		<German>Du wirst in %1 Sekunden teleportiert.</German>
 	</Key>
 	<Key ID="STR_HINT_TEAMUP">
 		<Original>You have some time to team up.</Original>
 		<German>Du hast etwas Zeit um ein team zu bilden.</German>
 	</Key>
-	<Key ID="STR_HINT_BORDER_01">
-		<Original>Return to arena within&#160;</Original>
-		<German>Begib dich innerhalb von&#160;</German>
-	</Key>
-	<Key ID="STR_HINT_BORDER_02">
-		<Original>&#160;seconds!</Original>
-		<German>&#160;Sekunden zurück zur Arena!</German>
+	<Key ID="STR_HINT_BORDER">
+		<Original>Return to arena within %1 seconds!</Original>
+		<German>Begib dich innerhalb von %1 Sekunden zurück zur Arena!</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_01">
-		<Original>You have&#160;</Original>
-		<German>Du hast&#160;</German>
+		<Original>You have %1 minutes to reach the safezone &quot;%2&quot;</Original>
+		<German>Du hast %1 Minuten um die sichere Zone &quot;%2&quot; zu erreichen.</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_02">
-		<Original>&#160;minutes to reach the safe zone &quot;</Original>
-		<German>&#160;Minuten um die sichere Zone &quot;</German>
+		<Original>The deathzone is active in %1 seconds.</Original>
+		<German>Die Todeszone ist aktiv in %1 Sekunden.</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_03">
-		<Original>&quot;.</Original>
-		<German>&quot; zu erreichen.</German>
+		<Original>The deathzone is active!</Original>
+		<German>Die Todeszone ist aktiv!</German>
 	</Key>
 	<Key ID="STR_CUT_THIRST">
 		<Original>Thirst:</Original>
@@ -119,6 +111,10 @@
 	<Key ID="STR_ACT_KILL">
 		<Original>kill</Original>
 		<German>töten</German>
+	</Key>
+	<Key ID="STR_ACT_WINDINFORMATION">
+		<Original>show windinformation</Original>
+		<German>zeige Windinformation</German>
 	</Key>
 </Project>
 <Project name="Virtual Ammobox System">

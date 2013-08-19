@@ -24,7 +24,7 @@ if (!isDedicated) then
 				{
 					player setDamage 1;
 					sleep 1;
-				}
+				};
 			};
 		};
 		sleep 1;

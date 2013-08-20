@@ -62,7 +62,7 @@ if (isServer) then
 			_allChances = _allChances + hg_loot_supportChance;
 			if (_rnd2 >= _allChances && _rnd2 <= _allChances+hg_loot_specialChance) then
 			{
-				_boxRnd = 5;
+				_boxRnd = 3;
 			};
 			_allChances = _allChances + hg_loot_specialChance;
 			if (_rnd2 >= _allChances && _rnd2 <= _allChances+hg_loot_waterChance) then

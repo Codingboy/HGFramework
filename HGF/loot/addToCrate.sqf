@@ -14,12 +14,12 @@ if (isServer) then
 	_active = (_cfg != "");
 	while {_active} do
 	{
-		if (_base == "ItemCore") then
+		if (_base == "ItemCore" || _base == "DetectorCore" || _base == "NVGoggles") then
 		{
 			_crate addItemCargoGlobal[_obj, 1];
 			_active = false;
 		};
-		if (_base == "RifleCore" || _base == "LauncherCore" || _base == "PistolCore") then
+		if (_base == "RifleCore" || _base == "LauncherCore" || _base == "PistolCore" || _base == "Binocular") then
 		{
 			_crate addWeaponCargoGlobal[_obj, 1];
 			_active = false;

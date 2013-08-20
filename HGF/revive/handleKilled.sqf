@@ -44,7 +44,14 @@ if (!isDedicated) then
 		1.5 fadeSound _rV;
 		1.5 fadeRadio _sV;
 		1.5 fadeMusic _mV;
-		cutRsc["hg_hud", "PLAIN"];
+		if (hg_dayz == 0) then
+		{
+			cutRsc["hg_hud", "PLAIN", 0, false];
+		}
+		else
+		{
+			cutRsc["hg_hudDayZ", "PLAIN", 0, false];
+		};
 	};
 
 	if (hg_license_btc_revive) then

@@ -104,6 +104,17 @@ class RscText
 	colorText[] = { 0, 0, 0, 1 };
 	font = "EtelkaNarrowMediumPro";
 };
+class RscPicture
+{
+	moving = false;
+	type = CT_STATIC;
+	idc = -1;
+	style = ST_PICTURE;
+	colorBackground[] = {0, 0, 0, 0};
+	colorText[] = {1,1,1, 1};
+	font = "EtelkaNarrowMediumPro";
+	sizeEx = 0;
+};
 class RscTitles
 {
 	class Tao_FoldMap
@@ -493,6 +504,108 @@ class RscTitles
 	
 	
 	
+	class hg_hudDayZ
+	{
+		idd = 55516;
+		fadeout=0;
+		fadein=0;
+		duration = 86400;//24h
+		name = "hg_hudDayZ";
+		onLoad = "uiNamespace setVariable ['hg_hudDayZ', _this select 0]";
+		class controlsBackground
+		{
+			class hg_thirst_image_inner : RscPicture
+			{
+				idc = 55517;
+				text = "HGF\media\status_thirst_inside_ca.paa";
+				x = 1.48;
+				y = 1.3;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_thirst_image_outer : RscPicture
+			{
+				idc = 55518;
+				text = "HGF\media\status_thirst_border_CA.paa";
+				x = 1.48;
+				y = 1.3;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_hunger_image_inner : RscPicture
+			{
+				idc = 55519;
+				text = "HGF\media\status_food_inside_ca.paa";
+				x = 1.48;
+				y = 1.15;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_hunger_image_outer : RscPicture
+			{
+				idc = 55520;
+				text = "HGF\media\status_food_border_CA.paa";
+				x = 1.48;
+				y = 1.15;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_temperature_image_inner : RscPicture
+			{
+				idc = 55521;
+				text = "HGF\media\status_temp_ca.paa";
+				x = 1.48;
+				y = 1.0;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_temperature_image_outer : RscPicture
+			{
+				idc = 55522;
+				text = "HGF\media\status_temp_outside_ca.paa";
+				x = 1.48;
+				y = 1.0;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_health_image_inner : RscPicture
+			{
+				idc = 55523;
+				text = "HGF\media\status_blood_inside_ca.paa";
+				x = 1.48;
+				y = 0.85;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_health_image_outer : RscPicture
+			{
+				idc = 55524;
+				text = "HGF\media\status_blood_border_CA.paa";
+				x = 1.48;
+				y = 0.85;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_fatigue_image_inner : RscPicture
+			{
+				idc = 55525;
+				text = "HGF\media\sleep.paa";
+				x = 1.48;
+				y = 0.7;
+				w = 0.10;
+				h = 0.10;
+			};
+			class hg_bleeding_image : RscPicture
+			{
+				idc = 55526;
+				text = "HGF\media\status_bleeding_ca.paa";
+				x = 1.48;
+				y = 0.85;
+				w = 0.10;
+				h = 0.10;
+			};
+		};
+	};
 	class hg_hud
 	{
 		idd = 55510;

@@ -80,6 +80,14 @@ class Params
 		texts[] = {"false","true"};
 		default = 1;
 	};
+	//1 -> disables nv and tv for all vehicles
+	class hg_dayz
+	{
+		title = "hg_dayz";
+		values[] = {0,1};
+		texts[] = {"false","true"};
+		default = 1;
+	};
 
 
 
@@ -142,7 +150,7 @@ class Params
 		title = "hg_loot_specialCount";
 		values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		texts[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
-		default = 7;
+		default = 5;
 	};
 	//number of support items in each supportbox
 	class hg_loot_supportCount

@@ -241,25 +241,162 @@ if (!isDedicated) then
 		_player setVariable[format["hg_damage_%1", name _player], _damage];
 		_player setVariable[format["hg_temperature_%1", name _player], _temperature];
 		_prevInfected = _infected;
-		if (hg_showThirst == 1) then
+		if (hg_dayz == 0) then
 		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55511) ctrlSetText (format["%1", round(_thirst)]+"%");
-		};
-		if (hg_showHunger == 1) then
+			if (hg_showThirst == 1) then
+			{
+				((uiNamespace getVariable "hg_hud") displayCtrl 55511) ctrlSetText (format["%1", round(_thirst)]+"%");
+			};
+			if (hg_showHunger == 1) then
+			{
+				((uiNamespace getVariable "hg_hud") displayCtrl 55512) ctrlSetText (format["%1", round(_hunger)]+"%");
+			};
+			if (hg_showFatigue == 1) then
+			{
+				((uiNamespace getVariable "hg_hud") displayCtrl 55513) ctrlSetText (format["%1", round(_fatigue)]+"%");
+			};
+			if (hg_showDamage == 1) then
+			{
+				((uiNamespace getVariable "hg_hud") displayCtrl 55514) ctrlSetText (format["%1", round((_damage)*100)]+"%");
+			};
+			if (hg_showTemperature == 1) then
+			{
+				((uiNamespace getVariable "hg_hud") displayCtrl 55515) ctrlSetText (format["%1", (round(_temperature*10))/10]+"°C");
+			};
+		}
+		else
 		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55512) ctrlSetText (format["%1", round(_hunger)]+"%");
-		};
-		if (hg_showFatigue == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55513) ctrlSetText (format["%1", round(_fatigue)]+"%");
-		};
-		if (hg_showDamage == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55514) ctrlSetText (format["%1", round((_damage)*100)]+"%");
-		};
-		if (hg_showTemperature == 1) then
-		{
-			((uiNamespace getVariable "hg_hud") displayCtrl 55515) ctrlSetText (format["%1", (round(_temperature*10))/10]+"°C");
+			if (hg_showThirst == 1) then
+			{
+				_r = 0;
+				_g = 0;
+				_b = 0;
+				if (_thirst >= 0 && _thirst <= 33) then
+				{
+					_g = 255;
+					_r = (_thirst/33)*255;
+				};
+				if (_thirst > 33 && _thirst <= 66) then
+				{
+					_r = 255;
+					_g = 255 - ((_thirst-33)/33)*127;
+				};
+				if (_thirst > 66 && _thirst <= 100) then
+				{
+					_r =255;
+					_g = 127 - ((_thirst-66)/34)*127;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55517) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55518) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+			};
+			if (hg_showHunger == 1) then
+			{
+				_r = 0;
+				_g = 0;
+				_b = 0;
+				if (_hunger >= 0 && _hunger <= 33) then
+				{
+					_g = 255;
+					_r = (_hunger/33)*255;
+				};
+				if (_hunger > 33 && _hunger <= 66) then
+				{
+					_r = 255;
+					_g = 255 - ((_hunger-33)/33)*127;
+				};
+				if (_hunger > 66 && _hunger <= 100) then
+				{
+					_r =255;
+					_g = 127 - ((_hunger-66)/34)*127;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55519) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55520) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+			};
+			if (hg_showFatigue == 1) then
+			{
+				_r = 0;
+				_g = 0;
+				_b = 0;
+				if (_fatigue >= 0 && _fatigue <= 33) then
+				{
+					_g = 255;
+					_r = (_fatigue/33)*255;
+				};
+				if (_fatigue > 33 && _fatigue <= 66) then
+				{
+					_r = 255;
+					_g = 255 - ((_fatigue-33)/33)*127;
+				};
+				if (_fatigue > 66 && _fatigue <= 100) then
+				{
+					_r =255;
+					_g = 127 - ((_fatigue-66)/34)*127;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55525) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+			};
+			if (hg_showDamage == 1) then
+			{
+				_r = 0;
+				_g = 0;
+				_b = 0;
+				if (_damage >= 0 && _damage <= 0.33) then
+				{
+					_g = 255;
+					_r = (_damage*100/33)*255;
+				};
+				if (_damage > 0.33 && _damage <= 0.66) then
+				{
+					_r = 255;
+					_g = 255 - ((_damage*100-33)/33)*127;
+				};
+				if (_damage > 0.66 && _damage <= 1) then
+				{
+					_r =255;
+					_g = 127 - ((_damage*100-66)/34)*127;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55523) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55524) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+				if ((damage _player > hg_bleedingDamageLimit && hg_bleedingDamage > 0) || (_infected && hg_infectionDamage > 0) || ((_temperature < hg_temperatureMin || _temperature > hg_temperatureMax) && hg_temperatureDamage > 0) || (_thirst >= 100 && hg_thirstDamage > 0) || (_hunger >= 100 && hg_hungerDamage > 0)) then
+				{
+					((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55526) ctrlSetTextColor [1, 1, 1, 1];
+				}
+				else
+				{
+					((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55526) ctrlSetTextColor [1, 1, 1, 0];
+				};
+			};
+			if (hg_showTemperature == 1) then
+			{
+				_r = 0;
+				_g = 0;
+				_b = 0;
+				if (_temperature < hg_temperatureMin) then
+				{
+					_r = 0;
+					_g = 0;
+					_b = 255;
+				};
+				if (_temperature >= hg_temperatureMin && _temperature <= hg_temperatureAvg) then
+				{
+					_r = 0;
+					_g = (_temperature-hg_temperatureMin)/(hg_temperatureAvg-hg_temperatureMin)*255;
+					_b = 255 - (_temperature-hg_temperatureMin)/(hg_temperatureAvg-hg_temperatureMin)*255;
+				};
+				if (_temperature > hg_temperatureAvg && _temperature <= hg_temperatureMax) then
+				{
+					_r = (_temperature-hg_temperatureAvg)/(hg_temperatureMax-hg_temperatureAvg)*255;
+					_g = 255 - (_temperature-hg_temperatureAvg)/(hg_temperatureMax-hg_temperatureAvg)*255;
+					_b = 0;
+				};
+				if (_temperature > hg_temperatureMax) then
+				{
+					_r = 255;
+					_g = 0;
+					_b = 0;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55521) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55522) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
+			};
 		};
 		sleep 1;
 	};

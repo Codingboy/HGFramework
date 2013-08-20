@@ -24,7 +24,7 @@ if (!isDedicated) then
 	[] execVM "HGF\init\initIDs.sqf";
 	if (hg_license_sounds) then
 	{
-		player addMPEventHandler ["mpkilled", {disableUserInput false; playSound "cannon"; (uiNamespace getVariable "hg_hud") closeDisplay 0;}];
+		player addMPEventHandler ["mpkilled", {disableUserInput false; playSound "cannon"; if (hg_dayz == 0) then {(uiNamespace getVariable "hg_hud") closeDisplay 0;}else{(uiNamespace getVariable "hg_hudDayZ") closeDisplay 0;};}];
 	};
 	player addAction[localize "STR_ACT_SLEEP", {[player] execVM "HGF\humanity\sleep.sqf";}, nil, 0, false, true, "", "stance player == ""PRONE"" && vehicle player == player"];
 	if (hg_licence_reveal) then
@@ -70,7 +70,14 @@ if (hg_license_windsystem && hg_windsystem==1) then
 	};
 };
 _initBoxes = [] execVM "HGF\init\initBoxes.sqf";
-cutRsc["hg_hud", "PLAIN", 0, false];
+if (hg_dayz == 0) then
+{
+	cutRsc["hg_hud", "PLAIN", 0, false];
+}
+else
+{
+	cutRsc["hg_hudDayZ", "PLAIN", 0, false];
+};
 
 if (hg_startHour == -1) then
 {

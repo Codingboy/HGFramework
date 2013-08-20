@@ -503,7 +503,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=136;
+		items=137;
 		class Item0
 		{
 			position[]={2847.49,3.3754582,6020.8267};
@@ -1455,6 +1455,13 @@ class Mission
 			name="F_3";
 			type="hd_dot";
 			colorName="ColorRed";
+		};
+		class Item136
+		{
+			position[]={2884.428,3.1661584,6013.855};
+			name="marker_29_1";
+			type="hd_dot";
+			colorName="ColorOrange";
 		};
 	};
 	class Sensors

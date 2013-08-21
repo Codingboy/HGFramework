@@ -13,6 +13,7 @@
 * 	added borders to examplemission
 
 
+
 0.7.2
 * 	using jumpscript v0.2 (permission received)
 * 	fixed: crates are not refilled anymore if player is within 3 meters

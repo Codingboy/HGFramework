@@ -15,7 +15,7 @@ hg_temperatureMin = hg_temperatureMin / 10;
 hg_temperatureAvg = hg_temperatureAvg / 10;
 hg_temperatureMax = hg_temperatureMax / 10;
 hg_temperatureBadFactor = hg_temperatureBadFactor / 10;
-hg_damagesystemValue = hg_damagesystemValue / 100;
+//hg_damagesystemValue = hg_damagesystemValue / 100;
 hg_infectionDamage = hg_infectionDamage / 1000;
 hg_infectionChance = hg_infectionChance / 10000;
 
@@ -63,7 +63,7 @@ hg_license_sounds = false;//I do not own the copyright
 hg_license_vas = true;//not responding
 hg_licence_jump = true;//official given
 hg_licence_reveal = true;//official given
-hg_license_damagesystem = true;//not responding
+//hg_license_damagesystem = true;//not responding
 hg_license_windsystem = true;//official given
 hg_license_explosivesinterface = true;//official given
 /*

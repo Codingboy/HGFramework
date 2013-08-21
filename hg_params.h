@@ -602,13 +602,13 @@ class Params
 		default = 3;
 	};
 	//damage player > this -> player gets blackouts
-	class hg_damagesystemValue
-	{
-		title = "hg_damagesystemValue";
-		values[] = {50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100};
-		texts[] = {"0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "1"};
-		default = 75;
-	};
+//	class hg_damagesystemValue
+//	{
+//		title = "hg_damagesystemValue";
+//		values[] = {50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100};
+//		texts[] = {"0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "1"};
+//		default = 75;
+//	};
 	//how much a player can eat per second (decrease hunger)
 	class hg_eatValue
 	{

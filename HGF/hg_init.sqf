@@ -35,6 +35,7 @@ if (!isDedicated) then
 	{
 		nul = [player] execVM "explosive_interface_fncs\explosive_interface.sqf";
 	};
+	[] execVM "HGF\postprocess\pp.sqf";
 };
 if (hg_license_tao_foldmap_a3) then
 {
@@ -56,10 +57,10 @@ if (hg_license_cly_removedead) then
 {
 	[hg_removePlayersTime, hg_removeVehiclesTime] execVM "cly_removedead\cly_removedead.sqf";
 };
-if (hg_license_damagesystem) then
-{
-	[hg_damagesystemValue] execVM "damagesystem\AUSMD_damagesystem.sqf";
-};
+//if (hg_license_damagesystem) then
+//{
+//	[hg_damagesystemValue] execVM "damagesystem\AUSMD_damagesystem.sqf";
+//};
 if (hg_license_windsystem && hg_windsystem==1) then
 {
 	if (isServer) then {execVM "windsystem\serverSync.sqf";};

@@ -1,0 +1,44 @@
+Suzanne Collins for The Hunger Games
+BIS for ArmA 3 & Scriptingreference
+Foxhound for Armaholic & editing the frontpage
+feersum.endjinn for Arma Unpbo Tool
+Giallustio & Crasso & Lucky44 & =BTC= for =BTC= Revive v0.93
+zuff for Group Management Script v1.1
+Outlawled for Mag Repack v2.1.3
+Celery for CLY Remove Dead v28
+MAD T for MAD FadeToBlack
+Armaholic-Community for helping
+Mr-Murray for ArmA Editing Guide
+Armaidiot for a lot of Youtube Editor Tutorials
+Nicolas & GossamerSolid & Sanjo for Notepad++ SQF Syntax Highlighting
+Taosenai & Dslyecxi/zx64 for Tao Folding Map v2.1
+austin(medic) for testing on a dedicated server & reviewing my code & Reveal Script & In Depth Damage Effects
+Tonic & Kronzky & SaMatra & Dslyecxi & Tyrghen & naong & Coding :D for Virtual Ammobox System v1.7
+Terox for dedicated server tutorial
+Pirin for helping me fixing my addAction distance bug & hint to use .jpg instead of .paa &&& you are awesome and have an excellent reputation
+tehcyx for the name "Hangar Games" (I like it a lot!)
+hanne.2k for testing
+ProGamer & Zooloo75/Stealthstick & F2kSel for Realistic Jumping/ Running Vault Script v0.4
+XuXu & Hege & darky for testing on dedicated server
+zooloo75/Stealthstick for Bullet-Wind Interaction System
+Xeno for a nice piece of code concerning paramsarray
+exit1 & BAS for the first live test
+zorilya for 3D Explosives Interface
+Marc-Oliver Straub & Marco Binder for sleep.paa
+vBurak for editing sleep.paa
+
+=BTC= Revive was created by Giallustio (I just configured it)
+Group Management Script was created by zuff (I added 2 new files and changed the other files to fit my changes)
+MAD_FadeToBlack (nearly copypasted into my sleepscript together with parts from =BTC= Revive)
+Mag Repack was created by Outlawled (I just converted the addon to a script)
+Tao Folding Map was created by Taosenai (I just converted the addon to a script and made it fit the framework)
+CLY Remove Dead was created by Celery (just using the script)
+VAS was created by Tonic (just configured and using it)
+Realistic Jumping Script was created by ProGamer & Zooloo75/Stealthstick (just using it and changed usage from "C" to "space" and disabled doubletap)
+Reveal Script was created by austin(medic) (just added an isDedicated check and changed the sleeptime)
+In Depth Damage Effects was created by austin(medic) (improved it and fixed some bugs)(not in use anylonger)
+Bullet-Wind Interaction System was created by zooloo75 (only minor changes)
+3D Explosives Interface was created by zorilya (only using it)
+I do not take credits for any picture or sound!
+hungergames.paa is an edited version of http://wallpoh.com/wp-content/uploads/2013/03/Free-The-Hunger-Games-Wallpaper-HD.jpg
+sleep.paa is an edited version of http://www.sb-software.de/sb-english/iWannaSleep_files/iWannaSleep%20webIcon.png

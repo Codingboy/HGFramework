@@ -1,3 +1,4 @@
+# Usage
 * Open the editor.
 * Press Ctrl+O.
 * Doubleclick your mission.
@@ -41,5 +42,6 @@ If you want to change the loot, helis, boats, vehicles look in the following fil
 * HGF\hg_variables.sqf
 * VAS\config.sqf
 * HGF\loot\paradrop\\*.sqf
-* HGF\init\initPlayer.sqf  
+* HGF\init\initPlayer.sqf
+
 If you add/delete a weapon to/from hg_loot_weapons, you also have to add/delete a magazine to/from hg_loot_weaponsMagazines.  

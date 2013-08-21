@@ -1,5 +1,5 @@
 # Readme
-![](HGF/media/hungergames1920x1024.jpg)
+![Hunger Games](HGF/media/hungergames1920x1024.jpg)
 * [HGFramework](README/HGFramework.md)
 * [General Missiondesign](README/general_missiondesign.md)
 * [Features](README/features.md)

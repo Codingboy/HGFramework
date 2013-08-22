@@ -16,5 +16,6 @@ All you need to do is install the HGFramework, open the editor and copy&paste so
 * [Copyrightissues & Namingconvention](README/namingconvention.md)
 * [Enable Copyrightcontent](README/enable_copyrightcontent.md)
 * [Changelog](README/CHANGELOG.md)
+* [Known Issues](README/known_issues.md)
 * [Credits](README/CREDITS.md)
 * [License](README/LICENSE.md)

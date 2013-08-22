@@ -1,8 +1,8 @@
 # General Missiondesign
 At startup all players have a little time to group up with other players if they want to.  
 Then all players will be teleported to the arena.  
-All players only have uniform, map, gps, radio, watch, compass.  
-There are 8 mines around each player so do not move!  
+All players only have uniform, rangemasterbelt, map, gps, radio, watch, compass.  
+There are 16 mines around each player so do not move!  
 The mines will be deactivated after some time.  
 Around the start are also a few lootcrates. But only in the middle are weapons.  
 The mission is finished when all players except one are dead.  

@@ -14,7 +14,7 @@
 	</Key>
 	<Key ID="STR_HINT_TEAMUP">
 		<Original>You have some time to team up.</Original>
-		<German>Du hast etwas Zeit um ein team zu bilden.</German>
+		<German>Du hast etwas Zeit um ein Team zu bilden.</German>
 	</Key>
 	<Key ID="STR_HINT_BORDER">
 		<Original>Return to arena within %1 seconds!</Original>
@@ -26,7 +26,7 @@
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_02">
 		<Original>The deathzone is active in %1 seconds.</Original>
-		<German>Die Todeszone ist aktiv in %1 Sekunden.</German>
+		<German>Die Todeszone ist in %1 Sekunden aktiv.</German>
 	</Key>
 	<Key ID="STR_HINT_DEATHZONE_03">
 		<Original>The deathzone is active!</Original>
@@ -117,8 +117,8 @@
 		<German>zeige Windinformation</German>
 	</Key>
 	<Key ID="STR_HINT_SLEEPTIME">
-		<Original>remaining sleeptime: %1</Original>
-		<German>verbleibende Zeit zu Schlafen: %1</German>
+		<Original>remaining sleeptime: %1 seconds</Original>
+		<German>verbleibende Zeit zu Schlafen: %1 Sekunden</German>
 	</Key>
 </Project>
 <Project name="Virtual Ammobox System">

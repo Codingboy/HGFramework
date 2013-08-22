@@ -116,6 +116,10 @@
 		<Original>show windinformation</Original>
 		<German>zeige Windinformation</German>
 	</Key>
+	<Key ID="STR_HINT_SLEEPTIME">
+		<Original>remaining sleeptime: %1</Original>
+		<German>verbleibende Zeit zu Schlafen: %1</German>
+	</Key>
 </Project>
 <Project name="Virtual Ammobox System">
 	<Package name="Main">

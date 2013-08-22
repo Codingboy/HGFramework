@@ -23,7 +23,7 @@ if (_fatigue > 0) then
 	disableUserInput true;
 	while {_time > 0} do
 	{
-		hintSilent format ["sleeptime: %1", _time];
+		hintSilent format [(localize "STR_HINT_SLEEPTIME"), _time];
 		if (_time < 0.1) then
 		{
 			sleep _time;

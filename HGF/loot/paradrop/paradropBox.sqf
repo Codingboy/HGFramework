@@ -3,7 +3,7 @@ if (!isServer) exitWith {};
 _pos = _this select 0;
 _items = _this select 1;
 
-_crate = createVehicle["B_supplyCrate_F", [_pos select 0, _pos select 1, hg_specialCrateDropHeight], [], 0, "NONE"];
+_crate = createVehicle["B_supplyCrate_F", [_pos select 0, _pos select 1, hg_specialCrateDropHeight], [], 0, "FLY"];
 _para = "B_Parachute_02_F" createVehicle [getPos _crate select 0, getPos _crate select 1, getPos _crate select 2];
 _crate attachTo [_para,[0,0,-1]];
 _para setPos [getPos _crate select 0, getPos _crate select 1, hg_specialCrateDropHeight];

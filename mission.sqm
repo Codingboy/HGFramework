@@ -503,7 +503,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=137;
+		items=138;
 		class Item0
 		{
 			position[]={2847.49,3.3754582,6020.8267};
@@ -877,8 +877,8 @@ class Mission
 		};
 		class Item53
 		{
-			position[]={2892.6147,3.4648046,6062.0781};
-			name="Crossroad";
+			position[]={2877.0405,1.6272473,6038.1826};
+			name="Bridge";
 			type="hd_end";
 			colorName="ColorGreen";
 		};
@@ -961,7 +961,7 @@ class Mission
 		};
 		class Item65
 		{
-			position[]={2719.9048,2.8050694,5769.0337};
+			position[]={2728.2229,2.616375,5783.6411};
 			name="A";
 			type="hd_dot";
 			colorName="ColorRed";
@@ -1462,6 +1462,13 @@ class Mission
 			name="marker_29_1";
 			type="hd_dot";
 			colorName="ColorOrange";
+		};
+		class Item137
+		{
+			position[]={2568.658,82.199936,5496.707};
+			name="Hillhouse";
+			type="hd_end";
+			colorName="ColorGreen";
 		};
 	};
 	class Sensors

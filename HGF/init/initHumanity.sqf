@@ -286,6 +286,28 @@ if (!isDedicated) then
 					_r =255;
 					_g = 127 - ((_thirst-66)/34)*127;
 				};
+				_n = 4;
+				if (_thirst >= 0 && _thirst < 20) then
+				{
+					_n = 4;
+				};
+				if (_thirst >= 20 && _thirst < 40) then
+				{
+					_n = 3;
+				};
+				if (_thirst >= 40 && _thirst < 60) then
+				{
+					_n = 2;
+				};
+				if (_thirst >= 60 && _thirst < 80) then
+				{
+					_n = 1;
+				};
+				if (_thirst >= 80 && _thirst <= 100) then
+				{
+					_n = 0;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55517) ctrlSetText format ["HGF\media\hud\status_thirst_inside_%1_ca.paa", _n];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55517) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55518) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 			};
@@ -309,6 +331,28 @@ if (!isDedicated) then
 					_r =255;
 					_g = 127 - ((_hunger-66)/34)*127;
 				};
+				_n = 4;
+				if (_hunger >= 0 && _hunger < 20) then
+				{
+					_n = 4;
+				};
+				if (_hunger >= 20 && _hunger < 40) then
+				{
+					_n = 3;
+				};
+				if (_hunger >= 40 && _hunger < 60) then
+				{
+					_n = 2;
+				};
+				if (_hunger >= 60 && _hunger < 80) then
+				{
+					_n = 1;
+				};
+				if (_hunger >= 80 && _hunger <= 100) then
+				{
+					_n = 0;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55519) ctrlSetText format ["HGF\media\hud\status_food_inside_%1_ca.paa", _n];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55519) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55520) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 			};
@@ -354,6 +398,32 @@ if (!isDedicated) then
 					_r =255;
 					_g = 127 - ((_damage*100-66)/34)*127;
 				};
+				_n = 1;
+				if (damage player >= 0/6 && damage player < 1/6) then
+				{
+					_n = 6;
+				};
+				if (damage player >= 1/6 && damage player < 2/6) then
+				{
+					_n = 5;
+				};
+				if (damage player >= 2/6 && damage player < 3/6) then
+				{
+					_n = 4;
+				};
+				if (damage player >= 3/6 && damage player < 4/6) then
+				{
+					_n = 3;
+				};
+				if (damage player >= 4/6 && damage player < 5/6) then
+				{
+					_n = 2;
+				};
+				if (damage player >= 5/6 && damage player <= 6/6) then
+				{
+					_n = 1;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55523) ctrlSetText format ["HGF\media\hud\status_blood_inside_%1_ca.paa", _n];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55523) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55524) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 				if ((damage _player > hg_bleedingDamageLimit && hg_bleedingDamage > 0) || (_infected && hg_infectionDamage > 0) || ((_temperature < hg_temperatureMin || _temperature > hg_temperatureMax) && hg_temperatureDamage > 0) || (_thirst >= 100 && hg_thirstDamage > 0) || (_hunger >= 100 && hg_hungerDamage > 0)) then
@@ -394,6 +464,28 @@ if (!isDedicated) then
 					_g = 0;
 					_b = 0;
 				};
+				_n = 2;
+				if (_temperature < hg_temperatureMin+1) then
+				{
+					_n = 0;
+				};
+				if (_temperature >= hg_temperatureMin+1 && _temperature < hg_temperatureAvg-2) then
+				{
+					_n = 1;
+				};
+				if (_temperature >= hg_temperatureAvg-2 && _temperature < hg_temperatureAvg+2) then
+				{
+					_n = 2;
+				};
+				if (_temperature >= hg_temperatureAvg+2 && _temperature < hg_temperatureMax-1) then
+				{
+					_n = 3;
+				};
+				if (_temperature >= hg_temperatureMax-1) then
+				{
+					_n = 4;
+				};
+				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55521) ctrlSetText format ["HGF\media\hud\status_temp_%1_ca.paa", _n];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55521) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 				((uiNamespace getVariable "hg_hudDayZ") displayCtrl 55522) ctrlSetTextColor [_r/255, _g/255, _b/255, 1];
 			};

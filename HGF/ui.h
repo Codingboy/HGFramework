@@ -517,7 +517,7 @@ class RscTitles
 			class hg_thirst_image_inner : RscPicture
 			{
 				idc = 55517;
-				text = "HGF\media\status_thirst_inside_ca.paa";
+				text = "HGF\media\hud\status_thirst_inside_4_ca.paa";
 				x = 1.48;
 				y = 1.3;
 				w = 0.10;
@@ -526,7 +526,7 @@ class RscTitles
 			class hg_thirst_image_outer : RscPicture
 			{
 				idc = 55518;
-				text = "HGF\media\status_thirst_border_CA.paa";
+				text = "HGF\media\hud\status_thirst_border_CA.paa";
 				x = 1.48;
 				y = 1.3;
 				w = 0.10;
@@ -535,7 +535,7 @@ class RscTitles
 			class hg_hunger_image_inner : RscPicture
 			{
 				idc = 55519;
-				text = "HGF\media\status_food_inside_ca.paa";
+				text = "HGF\media\hud\status_food_inside_4_ca.paa";
 				x = 1.48;
 				y = 1.15;
 				w = 0.10;
@@ -544,7 +544,7 @@ class RscTitles
 			class hg_hunger_image_outer : RscPicture
 			{
 				idc = 55520;
-				text = "HGF\media\status_food_border_CA.paa";
+				text = "HGF\media\hud\status_food_border_CA.paa";
 				x = 1.48;
 				y = 1.15;
 				w = 0.10;
@@ -553,7 +553,7 @@ class RscTitles
 			class hg_temperature_image_inner : RscPicture
 			{
 				idc = 55521;
-				text = "HGF\media\status_temp_ca.paa";
+				text = "HGF\media\hud\status_temp_2_ca.paa";
 				x = 1.48;
 				y = 1.0;
 				w = 0.10;
@@ -562,7 +562,7 @@ class RscTitles
 			class hg_temperature_image_outer : RscPicture
 			{
 				idc = 55522;
-				text = "HGF\media\status_temp_outside_ca.paa";
+				text = "HGF\media\hud\status_temp_outside_ca.paa";
 				x = 1.48;
 				y = 1.0;
 				w = 0.10;
@@ -571,7 +571,7 @@ class RscTitles
 			class hg_health_image_inner : RscPicture
 			{
 				idc = 55523;
-				text = "HGF\media\status_blood_inside_ca.paa";
+				text = "HGF\media\hud\status_blood_inside_6_ca.paa";
 				x = 1.48;
 				y = 0.85;
 				w = 0.10;
@@ -580,7 +580,7 @@ class RscTitles
 			class hg_health_image_outer : RscPicture
 			{
 				idc = 55524;
-				text = "HGF\media\status_blood_border_CA.paa";
+				text = "HGF\media\hud\status_blood_border_CA.paa";
 				x = 1.48;
 				y = 0.85;
 				w = 0.10;
@@ -589,7 +589,7 @@ class RscTitles
 			class hg_fatigue_image_inner : RscPicture
 			{
 				idc = 55525;
-				text = "HGF\media\sleep.paa";
+				text = "HGF\media\hud\sleep.paa";
 				x = 1.48;
 				y = 0.7;
 				w = 0.10;
@@ -598,7 +598,7 @@ class RscTitles
 			class hg_bleeding_image : RscPicture
 			{
 				idc = 55526;
-				text = "HGF\media\status_bleeding_ca.paa";
+				text = "HGF\media\hud\status_bleeding_ca.paa";
 				x = 1.48;
 				y = 0.85;
 				w = 0.10;

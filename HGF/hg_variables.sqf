@@ -98,7 +98,7 @@ hg_license_sounds = false;//I do not own the copyright
 hg_license_vas = true;//not responding
 hg_licence_jump = true;//official given
 hg_licence_reveal = true;//official given
-//hg_license_damagesystem = true;//not responding
+//hg_license_damagesystem = true;//official given
 hg_license_windsystem = true;//official given
 hg_license_explosivesinterface = false;//official given
 /*

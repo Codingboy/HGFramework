@@ -9,15 +9,18 @@ if (_fatigue > 0) then
 	_player playMove "AinjPpneMstpSnonWnonDnon_rolltoback";
 	waitUntil {animationstate _player == "AinjPpneMstpSnonWnonDnon_rolltoback"};
 
+	_mV = 0;
+	_sV = 0;
+	_rV = 0;
 	if (hg_license_fadeToBlack) then
 	{
 		_mV = musicVolume;
 		_sV = soundVolume;
 		_rV = radioVolume;
-		0 fadeSound 0;
-		0 fadeRadio 0;
-		0 fadeMusic 0;
-		titleText ["", "BLACK OUT"];
+		1 fadeSound 0;
+		1 fadeRadio 0;
+		1 fadeMusic 0;
+		titleText ["", "BLACK OUT", 1];
 	};
 
 	disableUserInput true;
@@ -42,10 +45,10 @@ if (_fatigue > 0) then
 
 	if (hg_license_fadeToBlack) then
 	{
-		1.5 fadeSound _rV;
-		1.5 fadeRadio _sV;
-		1.5 fadeMusic _mV;
-		titleText ["", "BLACK IN"];
+		1 fadeSound _rV;
+		1 fadeRadio _sV;
+		1 fadeMusic _mV;
+		titleText ["", "BLACK IN", 1];
 	};
 
 	_player playMove "amovppnemstpsraswrfldnon";

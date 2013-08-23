@@ -2,6 +2,41 @@ for "_i" from 0 to (count paramsArray - 1) do
 {
 	missionNamespace setVariable [configName ((missionConfigFile >> "Params") select _i), paramsArray select _i];
 };
+if (hg_difficultyDependendSettings == 1) then
+{
+	if (difficulty == 0) then
+	{
+		hg_ppEffects = 0;
+		hg_windsystem = 0;
+		hg_deleteSpecialMarkers = 0;
+		hg_markPlayers = 1;
+		hg_deleteCrateMarkers = 0;
+	};
+	if (difficulty == 1) then
+	{
+		hg_ppEffects = 0;
+		hg_windsystem = 0;
+		hg_deleteSpecialMarkers = 0;
+		hg_markPlayers = 0;
+		hg_deleteCrateMarkers = 0;
+	};
+	if (difficulty == 2) then
+	{
+		hg_ppEffects = 0;
+		hg_windsystem = 1;
+		hg_deleteSpecialMarkers = 1;
+		hg_markPlayers = 0;
+		hg_deleteCrateMarkers = 0;
+	};
+	if (difficulty == 3) then
+	{
+		hg_ppEffects = 1;
+		hg_windsystem = 1;
+		hg_deleteSpecialMarkers = 1;
+		hg_markPlayers = 0;
+		hg_deleteCrateMarkers = 1;
+	};
+};
 hg_thirstRate = hg_thirstRate / 1000;
 hg_hungerRate = hg_hungerRate / 1000;
 hg_fatigueRate = hg_fatigueRate / 1000;
@@ -65,7 +100,7 @@ hg_licence_jump = true;//official given
 hg_licence_reveal = true;//official given
 //hg_license_damagesystem = true;//not responding
 hg_license_windsystem = true;//official given
-hg_license_explosivesinterface = true;//official given
+hg_license_explosivesinterface = false;//official given
 /*
  *
  *

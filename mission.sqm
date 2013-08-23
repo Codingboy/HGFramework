@@ -83,7 +83,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={5368.3398,2.5462501,3753.1426};
+					position[]={5368.3501,2.5856469,3753.4531};
 					azimut=138.77;
 					special="NONE";
 					id=2;
@@ -1136,14 +1136,14 @@ class Mission
 		};
 		class Item90
 		{
-			position[]={2914.24,3.49,5986.1382};
+			position[]={2919.3774,3.49,5982.0273};
 			name="marker_51_4_22";
 			type="hd_dot";
 			colorName="ColorOrange";
 		};
 		class Item91
 		{
-			position[]={2935.1328,3.6126564,5986.9365};
+			position[]={2934.9053,3.5165918,5981.8545};
 			name="marker_51_4_23";
 			type="hd_dot";
 			colorName="ColorOrange";
@@ -1388,7 +1388,7 @@ class Mission
 		};
 		class Item126
 		{
-			position[]={2923.5239,3.49,5963.2471};
+			position[]={2922.1772,3.49,5959.8159};
 			name="marker_30_3";
 			type="hd_dot";
 			colorName="ColorOrange";

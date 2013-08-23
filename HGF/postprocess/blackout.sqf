@@ -10,10 +10,30 @@ while {true} do
 	{
 		_effect = ((damage player-_dmg)/(1-_dmg));
 		_sleep = _effect*random(_effectLengthMax-_effectLengthMin) + _effectLengthMin;
-		titleText ["", "BLACK OUT"];
+		titleText ["", "BLACK OUT", 1];
+		player switchMove "AidlPpneMstpSrasWrflDnon01";
+		_mV = 0;
+		_sV = 0;
+		_rV = 0;
+		if (hg_license_fadeToBlack) then
+		{
+			_mV = musicVolume;
+			_sV = soundVolume;
+			_rV = radioVolume;
+			1 fadeSound 0;
+			1 fadeRadio 0;
+			1 fadeMusic 0;
+		};
 		sleep _sleep;
 		
 		titleText ["", "BLACK IN"];
+		if (hg_license_fadeToBlack) then
+		{
+			1 fadeSound _rV;
+			1 fadeRadio _sV;
+			1 fadeMusic _mV;
+			titleText ["", "BLACK IN", 1];
+		};
 		_sleep = random(_noEffectLengthMax-_noEffectLengthMin) + _noEffectLengthMin;
 		sleep _sleep;
 	}

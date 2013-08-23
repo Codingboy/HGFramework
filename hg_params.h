@@ -363,7 +363,7 @@ class Params
 		title = "hg_removePlayersTime";
 		values[] = {0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300};
 		texts[] = {"no", "30", "60", "90", "120", "150", "180", "210", "240", "270", "300"};
-		default = 120;
+		default = 0;
 	};
 	//time between vehicle/heli/boat destroyed and removing of its wreck; 0 -> no removing
 	class hg_removeVehiclesTime
@@ -449,6 +449,22 @@ class Params
 	class hg_windsystem
 	{
 		title = "hg_windsystem";
+		values[] = {0,1};
+		texts[] = {"false","true"};
+		default = 1;
+	};
+	//1 -> post process effects enabled
+	class hg_ppEffects
+	{
+		title = "hg_ppEffects";
+		values[] = {0,1};
+		texts[] = {"false","true"};
+		default = 1;
+	};
+	//1 -> rookie scripts (markPlayers) are disabled in harder modes, hard scripts (ppEffects) are enabled in hard modes
+	class hg_difficultyDependendSettings
+	{
+		title = "hg_difficultyDependendSettings";
 		values[] = {0,1};
 		texts[] = {"false","true"};
 		default = 1;

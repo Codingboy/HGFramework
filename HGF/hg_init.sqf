@@ -31,11 +31,14 @@ if (!isDedicated) then
 	{
 		[] execVM "reveal\reveal.sqf";
 	};
-	if (hg_license_explosivesinterface) then
+	if (hg_ppEffects == 1) then
 	{
-		nul = [player] execVM "explosive_interface_fncs\explosive_interface.sqf";
+		[] execVM "HGF\postprocess\pp.sqf";
 	};
-	[] execVM "HGF\postprocess\pp.sqf";
+};
+if (hg_license_explosivesinterface) then
+{
+	nul = [] execVM "explosive_interface_fncs\all_use_interface.sqf";
 };
 if (hg_license_tao_foldmap_a3) then
 {

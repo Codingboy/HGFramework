@@ -124,7 +124,7 @@ class CfgHints
             displayName = "Explosive Interface (WIP)";
             description = "Move explosives by selecting %3move X%4 from the actionmenu.";
             image = "\a3\ui_f\data\gui\cfg\hints\Miss_icon_ca.paa";
-            tip = "The explosives can be dropped by hitting SPACE. Explosives can be attached to other objects. To move more complicated explosives you need a toolkit.";
+            tip = "The explosives can be dropped by hitting %3SPACE%4. Explosives can be attached to other objects. To move more complicated explosives you need a toolkit.";
         };
         class HintClass13
         {

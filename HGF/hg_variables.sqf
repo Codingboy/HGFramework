@@ -30,6 +30,7 @@ if (hg_difficultyDependendSettings == 1) then
 	};
 	if (difficulty == 3) then
 	{
+		hg_showDamage = 0;
 		hg_ppEffects = 1;
 		hg_windsystem = 1;
 		hg_deleteSpecialMarkers = 1;

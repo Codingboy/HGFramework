@@ -9,17 +9,11 @@ if (!isDedicated) then
 {
 	player createDiarySubject["info", "Info"];
 	player createDiaryRecord["Info", ["Mission", "Survive the other tributes."]];
-	player createDiaryRecord["Info", ["Recommended Serversettings", "3rd person view:	Disabled"]];
-	player createDiaryRecord["Info", ["Recommended Serversettings", "Weapon Crosshair:	Disabled"]];
-	player createDiaryRecord["Info", ["Recommended Serversettings", "Show detected mines:	Enabled"]];
-	player createDiaryRecord["Info", ["Recommended Serversettings", "Enemy TAG:	Disabled"]];
-	player createDiaryRecord["Info", ["Recommended Serversettings", "Friendly TAG:	Disabled"]];
-	player createDiaryRecord["Info", ["Recommended Serversettings", "Extended armor:	Enabled"]];
 	player createDiaryRecord["Info", ["Features", "go prone and select ""sleep"" from actionmenu to sleep"]];
 	player createDiaryRecord["Info", ["Features", "press ""space"" while running to jump"]];
 	player createDiaryRecord["Info", ["Features", "go close to a dead player and select ""revive"" from actionmenu to revive him"]];
-	player createDiaryRecord["Info", ["Features", "press ctrl+R to repack magazines"]];
-	player createDiaryRecord["Info", ["Features", "press shift+M to show a little map"]];
+	player createDiaryRecord["Info", ["Features", "press CTRL+R to repack magazines"]];
+	player createDiaryRecord["Info", ["Features", "press SHIFT+M to show a little map"]];
 
 	[] execVM "HGF\init\initIDs.sqf";
 	if (hg_license_sounds) then

@@ -14,6 +14,7 @@ All you need to do is install the HGFramework, open the editor and copy&paste so
 * [Installation](README/INSTALLATION.md)
 * [Usage](README/USAGE.md)
 * [Copyrightissues & Namingconvention](README/namingconvention.md)
+* [Recommended Serversettings](README/recommended_serversettings.md)
 * [Enable Copyrightcontent](README/enable_copyrightcontent.md)
 * [Changelog](README/CHANGELOG.md)
 * [Known Issues](README/known_issues.md)

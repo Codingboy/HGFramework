@@ -150,7 +150,7 @@ class Params
 		title = "hg_loot_specialCount";
 		values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		texts[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
-		default = 5;
+		default = 7;
 	};
 	//number of support items in each supportbox
 	class hg_loot_supportCount

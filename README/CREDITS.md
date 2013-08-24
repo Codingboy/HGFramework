@@ -27,7 +27,7 @@
 * [zorilya](http://www.armaholic.com/users.php?m=details&id=30300&u=zorilya) for [3D Explosives Interface](http://www.armaholic.com/forums.php?m=posts&id=149713)
 * [Marc-Oliver Straub & Marco Binder](http://www.sb-software.de/sb-english/About%20us.html) for sleep.paa
 * vBurak for editing sleep.paa
-* [DayZ Team](README/DAYZCREDITS.md) for the hud icons for hunger/thirst/temperature/damage
+* [DayZ Team](DAYZCREDITS.md) for the hud icons for hunger/thirst/temperature/damage
 
 ## Content
 =BTC= Revive was created by Giallustio (I just configured it)  

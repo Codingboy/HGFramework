@@ -30,5 +30,6 @@ if (isServer) then
 			};
 		}
 		forEach allMapMarkers;
+		diag_log format ["%1 HGFramework: special markers deleted", time];
 	};
 };

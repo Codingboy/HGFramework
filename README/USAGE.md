@@ -19,9 +19,9 @@
 * Click on one.
 * Hover the mouse direct over that one you clicked.
 * Press Ctrl+C.
-* Place the mouse where you want it. Do not place lootmarkers in buildings because the crates will spawn in the floor.
+* Place the mouse where you want it. Do not place lootmarkers in buildings because the crates will spawn not correctly.
 * Press Ctrl+V.
-* Repeat until all dots are where you want them.
+* Repeat until all dots are where you want them. You can move them by drag&drop.
 * Delete (hover mouse over dot and press del) all unwanted dots (In general those who already were there when you opened the editor. THIS IS IMPORTANT!!!).
 * I recommend to place a lot of orange dots (>50), 1-5 black dots, ~7 red dots, ~3 blue dots, 1 yellow dot, ~7 green dots. Depends on missionsize and may vary a lot.
 * After all, doubleclick on all green markers and give each one a good name like "Camp Tempest". The names are shown when the deathzone warning pops up.

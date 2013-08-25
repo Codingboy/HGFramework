@@ -28,3 +28,4 @@ _player addWeapon "ItemGps";
 _player addWeapon "ItemMap";
 _player addWeapon "ItemWatch";
 _player addWeapon "ItemRadio";
+diag_log format ["%1 HGFramework: player initialised", time];

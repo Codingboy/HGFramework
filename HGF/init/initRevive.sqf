@@ -12,4 +12,5 @@ if (!isDedicated) then
 		forEach hg_players;
 		player addMPEventHandler ["MPHit", {_null = [_this select 0, _this select 1, _this select 2] execVM "HGF\revive\hit.sqf";}];
 	};
+	diag_log format ["%1 HGFramework: revive initialised", time];
 };

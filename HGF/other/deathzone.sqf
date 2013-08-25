@@ -23,6 +23,7 @@ if (!isDedicated) then
 				while {true} do
 				{
 					player setDamage 1;
+					diag_log format ["%1 HGFramework: killed by border", time];
 					sleep 1;
 				};
 			};

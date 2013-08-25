@@ -11,6 +11,7 @@ _minute = date select 4;
 _second = 0;
 _lastExecution = serverTime;
 _sleepTime = 0;
+diag_log format ["%1 HGFramework: timeacceleration initialised", time];
 while {true} do
 {
 	if (isServer) then

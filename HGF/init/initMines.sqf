@@ -1,6 +1,7 @@
 private["_null"];
 if (isServer) then
 {
+	diag_log format ["%1 HGFramework: mines initialised", time];
 	while {hg_mineTimer > 0} do
 	{
 		sleep 1;
@@ -19,6 +20,7 @@ if (isServer) then
 		deleteVehicle _x;
 	}
 	forEach hg_mines;
+	diag_log format ["%1 HGFramework: mines deactivated", time];
 	_null = [{hintSilent format["%1", hg_mineTimer]; playSound "start";},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	{
 		_x enableAI "MOVE";

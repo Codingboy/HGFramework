@@ -3,7 +3,6 @@ private ["_vehicle","_markersPos","_veh","_para","_active","_paraPos","_null"];
 if (isServer) then
 {
 	_vehicle = hg_vehicles;
-	sleep hg_vehicleFirstDelay;
 	_active = true;
 	_markersPos = [];
 	{
@@ -17,6 +16,8 @@ if (isServer) then
 	{
 		_active = false;
 	};
+	diag_log format ["%1 HGFramework: helis initialised", time];
+	sleep hg_vehicleFirstDelay;
 	while {_active} do
 	{
 		_paraPos = _markersPos select (floor(random(count _markersPos)));
@@ -25,6 +26,7 @@ if (isServer) then
 		_veh attachTo [_para,[0,0,0]];
 		_para setPos [getPos _para select 0, getPos _para select 1, hg_vehicleDropHeight];
 		_null = [_veh, _para] execVM "HGF\loot\vehicle\initVehicle.sqf";
+		diag_log format ["%1 HGFramework: %2 spawned", time, _vehicle];
 		sleep hg_vehicleSpawnDelay;
 	};
 };

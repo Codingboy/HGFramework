@@ -22,6 +22,7 @@ if (isServer) then
 	}
 	forEach hg_players;
 	_null = [{sleep 5; (name player) setMarkerColorLocal hg_markPlayerSelfColor;},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
+	diag_log format ["%1 HGFramework: markplayers initialised", time];
 	while {true} do
 	{
 		for "_i" from 0 to count hg_players-1 do

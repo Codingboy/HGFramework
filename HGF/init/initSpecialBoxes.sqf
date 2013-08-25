@@ -19,6 +19,7 @@ if (isServer) then
 	{
 		_active = false;
 	};
+	diag_log format ["%1 HGFramework: specialboxes initialised", time];
 	sleep hg_specialCrateFirstDelay;
 	while {_active} do
 	{

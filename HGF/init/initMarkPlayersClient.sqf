@@ -1,6 +1,7 @@
 if (!isDedicated) then
 {
 	sleep 10;
+	diag_log format ["%1 HGFramework: markplayers client initialised", time];
 	while {true} do
 	{
 		for "_i" from 0 to count hg_players-1 do

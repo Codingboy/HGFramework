@@ -58,6 +58,7 @@ if (!isDedicated && (hg_bordersActive == 1)) then
 	{
 		_active = false;
 	};
+	diag_log format ["%1 HGFramework: borders initialised", time];
 	while {_active && (hg_bordersActive == 1)} do
 	{
 		_isIn = false;
@@ -114,4 +115,5 @@ if (!isDedicated && (hg_bordersActive == 1)) then
 		deleteMarkerLocal _x;
 	}
 	forEach hg_disallowedAreasMarkers;
+	diag_log format ["%1 HGFramework: borders deactivated", time];
 };

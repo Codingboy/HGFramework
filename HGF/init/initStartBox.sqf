@@ -84,4 +84,5 @@ if (isServer) then
 		
 		_angle = _angle + 360.0/count hg_players;
 	};
+	diag_log format ["%1 HGFramework: startbox initialised", time];
 };

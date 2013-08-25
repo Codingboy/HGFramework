@@ -8,4 +8,5 @@ if (!isDedicated) then
 	[0.85, 0.25, 0.15, 0.05, 1, 3, 1, 3, 0.5, 1.5] execVM "HGF\postprocess\neardeath.sqf";
 	[0.15, 0.33, 3.5, 0.5, 5, 10, 10, 20] execVM "HGF\postprocess\shake.sqf";
 	[0.75, 1, 10, 10, 60] execVM "HGF\postprocess\blackout.sqf";
+	diag_log format ["%1 HGFramework: postprocesseffects initialised", time];
 };

@@ -125,3 +125,4 @@ if (isNil "hg_disallowedAreas") then
 {
 	hg_disallowedAreas = [];
 };
+diag_log format ["%1 HGFramework: variables initialised", time];

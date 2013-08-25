@@ -88,5 +88,6 @@ if (isServer) then
 		};
 	};
 	_countend = count _crateMarkers;
-	hint format["crates: %1/%2", _countend, _countstart];
+	diag_log format ["%1 HGFramework: crates initialised", time, _countend, _countstart];
+	diag_log format ["%1 HGFramework: %2 of %3 crates spawned", time];
 };

@@ -25,6 +25,7 @@ if (!isDedicated) then
 	_fatigueSpeedLimitation = false;
 	_prevDamage = 0;
 	_prevInfected = false;
+	diag_log format ["%1 HGFramework: humanity initialised", time];
 	while {alive _player} do
 	{
 		_infected = _player getVariable [format["hg_infected_%1", name _player], false];

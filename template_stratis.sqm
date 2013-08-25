@@ -459,6 +459,22 @@ class Mission
 			colorName="ColorWhite";
 		};
 	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={2770.3013,-0.011266404,6054.6797};
+			a=10000;
+			b=10000;
+			interruptable=1;
+			age="UNKNOWN";
+			name="allowed1";
+			class Effects
+			{
+			};
+		};
+	};
 };
 class Intro
 {

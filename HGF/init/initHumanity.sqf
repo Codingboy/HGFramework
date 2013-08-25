@@ -465,23 +465,23 @@ if (!isDedicated) then
 					_b = 0;
 				};
 				_n = 2;
-				if (_temperature < hg_temperatureMin+1) then
+				if (_temperature < hg_temperatureMin+1.5) then
 				{
 					_n = 0;
 				};
-				if (_temperature >= hg_temperatureMin+1 && _temperature < hg_temperatureAvg-2) then
+				if (_temperature >= hg_temperatureMin+1.5 && _temperature < hg_temperatureAvg-1.5) then
 				{
 					_n = 1;
 				};
-				if (_temperature >= hg_temperatureAvg-2 && _temperature < hg_temperatureAvg+2) then
+				if (_temperature >= hg_temperatureAvg-1.5 && _temperature < hg_temperatureAvg+1.5) then
 				{
 					_n = 2;
 				};
-				if (_temperature >= hg_temperatureAvg+2 && _temperature < hg_temperatureMax-1) then
+				if (_temperature >= hg_temperatureAvg+1.5 && _temperature < hg_temperatureMax-1.5) then
 				{
 					_n = 3;
 				};
-				if (_temperature >= hg_temperatureMax-1) then
+				if (_temperature >= hg_temperatureMax-1.5) then
 				{
 					_n = 4;
 				};

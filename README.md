@@ -11,7 +11,6 @@ All you need to do is install the HGFramework, open the editor and copy&paste so
 ## Table of Contents
 * [General Missiondesign](README/general_missiondesign.md)
 * [Features](README/features.md)
-* [Installation](README/INSTALLATION.md)
 * [Usage](README/USAGE.md)
 * [Copyrightissues & Namingconvention](README/namingconvention.md)
 * [Recommended Serversettings](README/recommended_serversettings.md)

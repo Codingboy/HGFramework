@@ -24,6 +24,7 @@ if (!isDedicated) then
 	if (hg_licence_reveal) then
 	{
 		[] execVM "reveal\reveal.sqf";
+		diag_log format ["%1 HGFramework: revealscript initialised", time];
 	};
 	if (hg_ppEffects == 1) then
 	{
@@ -33,10 +34,12 @@ if (!isDedicated) then
 if (hg_license_explosivesinterface) then
 {
 	nul = [] execVM "explosive_interface_fncs\all_use_interface.sqf";
+	diag_log format ["%1 HGFramework: explosiveinterface initialised", time];
 };
 if (hg_license_tao_foldmap_a3) then
 {
 	[] execVM "tao_foldmap_a3\XEH_preClientInit.sqf";
+	diag_log format ["%1 HGFramework: foldingmap initialised", time];
 };
 if (hg_license_btc_revive && hg_revive==1) then
 {
@@ -45,14 +48,17 @@ if (hg_license_btc_revive && hg_revive==1) then
 if (hg_license_groupManagement) then
 {
 	[player] execVM "scripts\groupsMenu\initGroups.sqf";
+	diag_log format ["%1 HGFramework: groupmanagement initialised", time];
 };
 if (hg_license_outlw_magRepack) then
 {
 	[] execVM "outlw_magRepack\init_magRepack.sqf";
+	diag_log format ["%1 HGFramework: mag repack initialised", time];
 };
 if (hg_license_cly_removedead) then
 {
 	[hg_removePlayersTime, hg_removeVehiclesTime] execVM "cly_removedead\cly_removedead.sqf";
+	diag_log format ["%1 HGFramework: remove dead initialised", time];
 };
 //if (hg_license_damagesystem) then
 //{
@@ -66,6 +72,7 @@ if (hg_license_windsystem && hg_windsystem==1) then
 		execVM "windsystem\bulletWindClient.sqf";
 		player addAction [localize "STR_ACT_WINDINFORMATION", "HGF\other\windinformation.sqf", nil, 0, false, true, "", ""];
 	};
+	diag_log format ["%1 HGFramework: windsystem initialised", time];
 };
 _initBoxes = [] execVM "HGF\init\initBoxes.sqf";
 if (hg_dayz == 0) then
@@ -76,6 +83,7 @@ else
 {
 	cutRsc["hg_hudDayZ", "PLAIN", 0, false];
 };
+diag_log format ["%1 HGFramework: hud initialised", time];
 
 if (hg_startHour == -1) then
 {
@@ -106,6 +114,7 @@ if (hg_startMinute == -1) then
 	hg_startMinute = floor(random 60);
 };
 setDate[date select 0, date select 1, date select 2, hg_startHour, hg_startMinute];
+diag_log format ["%1 HGFramework: time set to %2:%3", time, hg_startHour, hg_startMinute];
 if (hg_civilianPresent == 0) then
 {
 	{
@@ -169,6 +178,7 @@ if (isServer) then
 	sleep hg_groupUpTime;
 	waitUntil {scriptDone _initBoxes};
 	waitUntil {scriptDone _initStartBox};
+	diag_log format ["%1 HGFramework: arena initialised", time];
 	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "5"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
 	sleep 1;
 	_null = [{hint ((localize "STR_HINT_ARENAREADY")+"\n"+format[(localize "STR_HINT_TELEPORT"), "4"]+"\n"+(localize "STR_HINT_DONTMOVE"));},"BIS_fnc_spawn",true,true] spawn BIS_fnc_MP;
@@ -183,6 +193,7 @@ if (isServer) then
 	initStartPlayer = [] execVM "HGF\init\initStartPlayer.sqf";
 	waitUntil {scriptDone initStartPlayer};
 	west setFriend[west, 0];
+	diag_log format ["%1 HGFramework: players became enemies", time];
 	_null = [] execVM "HGF\other\deleteSpecialMarkers.sqf";
 	_null = [] execVM "HGF\init\initSpecialBoxes.sqf";
 	_null = [] execVM "HGF\init\initVehicles.sqf";

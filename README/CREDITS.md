@@ -41,7 +41,7 @@ Realistic Jumping Script was created by ProGamer & Zooloo75/Stealthstick (just u
 Reveal Script was created by austin(medic) (just added an isDedicated check and changed the sleeptime)  
 In Depth Damage Effects was created by austin(medic) (improved it and fixed some bugs)(not in use anylonger)  
 Bullet-Wind Interaction System was created by zooloo75 (only minor changes)  
-3D Explosives Interface was created by zorilya (only using it)   
+3D Explosives Interface was created by zorilya (replaced all cuttext by titletext to not interfere the hud)   
 hungergames.paa is an edited version of [this wallpaper](http://wallpoh.com/wp-content/uploads/2013/03/Free-The-Hunger-Games-Wallpaper-HD.jpg)  
 sleep.paa is an edited version of [this icon](http://www.sb-software.de/sb-english/iWannaSleep_files/iWannaSleep%20webIcon.png)  
 most hud icons (except sleep) where made by DayZ Team

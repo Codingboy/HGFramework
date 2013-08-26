@@ -1,0 +1,1 @@
+CODI_add_fnc_add = compile preprocessFile "CODI\addtocrate\add.sqf";

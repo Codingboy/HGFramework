@@ -15,7 +15,7 @@ _unitItems = items _unit;
 _bHasTools = "ToolKit" in _unitItems;
 if ((_class in _complexBombs) && (!_bHasTools)) exitwith
 {
-	cuttext ["You need Tools to move this explosive","PLAIN",0.2];
+	titletext ["You need Tools to move this explosive","PLAIN",0.2];
 };
 
 
@@ -112,9 +112,9 @@ nul = [_unit,_charge,_dummyCharge] spawn
 					_keyNames = _this select 0;
 					_throwMessage = format [" \n Hold %1 to throw",_keyNames];
 					_placeMessage = format [" \n Tap %1 to place/drop",_keyNames];
-					cuttext [_throwMessage,"PLAIN",0.3];
+					titletext [_throwMessage,"PLAIN",0.3];
 					sleep 2;
-					cuttext [_placeMessage,"PLAIN",0.3];
+					titletext [_placeMessage,"PLAIN",0.3];
 				};
 				_bHadThrowHint = _unit setVariable ["bHadThrowHint",true];
 			};
@@ -124,7 +124,7 @@ nul = [_unit,_charge,_dummyCharge] spawn
 			if (!_bHadPlaceHint) then
 			{
 			_placeMessage = format [" \n Tap %1 to place/drop",_keyNames];
-			cuttext [_placeMessage,"PLAIN",0.3];
+			titletext [_placeMessage,"PLAIN",0.3];
 			_unit setVariable ["bHadPlaceHint",true];
 			};
 		};
@@ -145,39 +145,39 @@ nul = [_unit,_charge,_dummyCharge] spawn
 		nul = [] spawn 
 		{
 			sleep 0.1;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["i","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["i","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext [".i.","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext [".i.","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["...i...","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["...i...","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["....i....","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["....i....","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext [".....i.....","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext [".....i.....","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["!.....i.....!","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["!.....i.....!","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["..!.....i.....!..","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["..!.....i.....!..","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["...!.....i.....!...","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["...!.....i.....!...","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["....!.....i.....!....","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["....!.....i.....!....","PLAIN",0.01];
 			sleep 0.05;
-			if (!holdingKey) exitwith {cuttext ["","PLAIN",0.1];};
-			cuttext ["!.....!.....i.....!.....!","PLAIN",0.01];
+			if (!holdingKey) exitwith {titletext ["","PLAIN",0.1];};
+			titletext ["!.....!.....i.....!.....!","PLAIN",0.01];
 			sleep 0.05;
 			while {holdingKey} do
 			{
-				cuttext ["!.....!.....i.....!.....!","PLAIN",0.01];
+				titletext ["!.....!.....i.....!.....!","PLAIN",0.01];
 			};
 		};
 	};

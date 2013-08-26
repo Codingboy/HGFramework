@@ -163,7 +163,7 @@
 
 0.8.4
 * added: drones
-* chenged: increased loot in special box
+* changed: increased loot in special box
 * fixed: bug in localization
 * added: new paradrop spots
 * chaged: refactored paradropped box to make it more generic and easier to add new boxes
@@ -173,7 +173,7 @@
 * added: hint if infected/infection healed
 * added: localization for infection
 * changed: infection adjusted to fit its explanation
-* changed: all players are medics from now to fully regenerate health to disable infections and make the medikit better
+* changed: all players are medics from now to fully regenerate health to deny infections and make the medikit better
 
 0.8.5
 * changed: removed ratingsystem
@@ -182,3 +182,20 @@
 * removed dead code from ui.h
 * fixed: hud disabled when killed
 * worked on revivesystem
+* added: icon based hud (DayZ)
+* added: food & water at spawn (examplemission) to show how it looks like
+* added: more localization
+* fixed: multiple minor bugs
+* added: own post-process-damagesystem
+* removed: austin's damagesystem
+* README.txt separated in multiple files, now used again and up to date, -> README.md and README folder
+* added: mortar backpacks to special items
+* added: recommended serversettings
+* added: fieldmanual entries (untranslated)
+* updated: explosives interface 1.1 fixed
+* added: logging
+* added: ofpec tag CODI
+* refactored folderstructure again
+* separated the framework from some parts and released them separately
+* added: altis template
+* added: altis example

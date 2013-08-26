@@ -8,7 +8,7 @@
 * Follow [Installation-instructions](INSTALLATION.md)
 * Press Ctrl+T.
 * Press F6.
-* Search the colored dots around Agia Marina (Stratis).
+* Search the colored dots around Agia Marina (Stratis) / Main Airfield (Altis).
 * Where a black dot is placed, the players may be teleported at missionbegin.
 * Where a orange dot is placed, a random lootbox will spawn.
 * Where a red dot is placed, a special lootbox will be paradropped from time to time (really good loot).
@@ -33,7 +33,7 @@
 Congratulations!!! You created your first multiplayer mission with HGFramework!
 
 **For advanced users:**  
-All missionparameters can be changed on missionstart. Read hg_params.h for description of each variable. I recommend to edit the defaultvalues to fit with your missionbehaviour.  
+All missionparameters can be changed on missionstart. Read hgf_params.h for description of each variable. I recommend to edit the defaultvalues to fit with your missionbehaviour.  
 If you want to customize the framework and have questions just ask me.  
 If you want to set up borders, place some markers that mark the whole area where players may walk. Give each marker a name (allowed1, allowed2, ...). In the init.sqf put the names commaseparated in the brackets:  
 hg_allowedAreas = [allowed1, allowed2];  
@@ -42,10 +42,10 @@ hg_disallowedAreas = [disallowed1];
 Borders will be activated on teleport and deactivated when the deathzonewarning pops up.  
 I recommend to set good defaultvalues for the framework variables because on missionstart most people will use the defaultvalues! Dafultvalues can be set in hg_params.h.  
 If you want to change the loot, helis, boats, vehicles look in the following files and edit some values:  
-* HGF\hg_variables.sqf
+* CODI\hgf\variables.sqf
 * VAS\config.sqf
-* HGF\loot\paradrop\\*.sqf
-* HGF\init\initPlayer.sqf
+* CODI\hgf\loot\paradrop\\*.sqf
+* CODI\hgf\init\initPlayer.sqf
 
 If you add/delete a weapon to/from hg_loot_weapons, you also have to add/delete a magazine to/from hg_loot_weaponsMagazines.  
 To set up a minimum missiontemplate place a few blufor medics, place one marker of each color (black, orange, red, blue, white, yellow, green) and place a trigger which includes the whole landscape and name it "allowed1".

@@ -53,8 +53,8 @@
 		<German>Temperatur:</German>
 	</Key>
 	<Key ID="STR_SOUND_HAPPYHUNGERGAMES">
-		<Original>eng_HappyHungerGames</Original>
-		<German>ger_HappyHungerGames</German>
+		<Original>CODI_hgf_sound_eng_HappyHungerGames</Original>
+		<German>CODI_hgf_sound_ger_HappyHungerGames</German>
 	</Key>
 	<Key ID="STR_DEBR_SURVIVED">
 		<Original>SURVIVED!</Original>

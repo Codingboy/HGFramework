@@ -61,6 +61,7 @@
 * Moveable explosives
 	- explosives can be moved
 	- drop them by pressing "space"
+	- rethrow grenades
 * Infected wounds
 	- wounds can get infected and deal damage over time
 	- chance is linear depending to damage

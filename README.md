@@ -1,5 +1,5 @@
 # Readme
-![Hunger Games](HGF/media/hungergames1920x960.jpg)
+![Hunger Games](CODI/hgf/media/hungergames1920x960.jpg)
 
 ## HGFramework
 HGFramework is designed to create missions that are similar to the concept of the Hunger Games.  

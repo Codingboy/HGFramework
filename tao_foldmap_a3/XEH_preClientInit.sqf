@@ -6,7 +6,7 @@ ADDON = false;
 /////////////////////////////////////////////////////////////////////////////////
 
 // TODO: Is this ideal?
-tao_foldmap_mapScale = 0.20;
+tao_foldmap_mapScale = 0.10;
 
 // Define values for positioning the foldmap.
 #define tao_foldmap_leftX  0.02
@@ -31,13 +31,14 @@ tao_foldmap_drawUpdate = {
 	};
 	
 	// Off-map check: if the player has gotten off the map for whatever reason (teleport, off-map area), re-center the map
-	if (ctrlCommitted ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25) && tao_foldmap_scrollFinished) then {
+	if (ctrlCommitted ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25) && (tao_foldmap_scrollFinished || tao_foldmap_oldPos2 distance getPos player > 100)) then {
 		_wts = ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25) ctrlMapWorldToScreen getPos player;
 		_upperLeftCorner = [tao_foldmap_mapPosX, tao_foldmap_mapPosY];
 		_lowerRightCorner = [tao_foldmap_mapPosX + (safezoneW * 0.38), tao_foldmap_mapPosY + (safezoneH * 0.75)];
 		
 		if (_wts select 0 < (_upperLeftCorner select 0) - 0.2 || _wts select 1 < (_upperLeftCorner select 1) - 0.2 || _wts select 0 > (_lowerRightCorner select 0) + 0.2 || _wts select 1 > (_lowerRightCorner select 1) + 0.2) then {
 			tao_foldmap_centerpos = getpos player;
+			tao_foldmap_oldPos2 = getPos player;
 			((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25) ctrlMapAnimAdd [0, tao_foldmap_mapScale, [tao_foldmap_centerpos select 0, tao_foldmap_centerpos select 1, 0]];
 			ctrlMapAnimCommit ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25);
 			//player sidechat 'offmap recenter';
@@ -104,6 +105,7 @@ tao_foldmap_initDialog = {
 	
 	// Get player position for auto-recenter (teleport fix)
 	tao_foldmap_oldPos = getPos player;
+	tao_foldmap_oldPos2 = getPos player;
 	
 	// Place everything in position to be scrolled.
 	((uiNamespace getVariable "Tao_FoldMap") displayCtrl 23) ctrlSetPosition [tao_foldmap_mapBackPosX, safezoneY + 1 * safezoneW];
@@ -160,11 +162,13 @@ tao_foldMap_drawMapLoop = {
 		};
 		
 		// Auto-recenter needed check -- if player has moved more than 100m since last redaw, recenter the map
-		// if ((tao_foldmap_oldPos distance getPos player) > 100) then {
-			// tao_foldmap_centerpos = getpos player;
-			// ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25) ctrlMapAnimAdd [0, tao_foldmap_mapScale, [tao_foldmap_centerpos select 0, tao_foldmap_centerpos select 1, 0]];
-			// ctrlMapAnimCommit ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25);
-		// };
+		hint format["%1 %2 %3", tao_foldmap_oldPos2, getPos player, tao_foldmap_oldPos2 distance getPos player];
+		if ((tao_foldmap_oldPos2 distance getPos player) > 100) then {
+			tao_foldmap_centerpos = getpos player;
+			tao_foldmap_oldPos2 = getPos player;
+			((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25) ctrlMapAnimAdd [0, tao_foldmap_mapScale, [tao_foldmap_centerpos select 0, tao_foldmap_centerpos select 1, 0]];
+			ctrlMapAnimCommit ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 25);
+		};
 	};
 	tao_foldmap_drawingLoop = false;
 	

@@ -1,3 +1,3 @@
-hg_allowedAreas = [allowed1];
-hg_disallowedAreas = [];
-_null = [] execVM "HGF\hg_init.sqf";
+CODI_hgf_allowedAreas = [allowed1];
+CODI_hgf_disallowedAreas = [];
+_null = [] execVM "CODI\hgf\init.sqf";

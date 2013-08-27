@@ -19,6 +19,35 @@ if (!((typeOf _charge) in _attachableBombs)) exitwith
 	nul = [_charge,_unit] spawn fnc_drop_object;
 };
 
+if (isNil ("zor_Move_Charge")) then
+{
+	zor_Move_Charge =
+	{
+		private ["_charge","_posASL","_vectors","_dir"];
+		_charge = _this select 0;
+		_posASL = _this select 1; if (isNil ("_posASL")) then {_posASL = [0,0,0]};
+		_vectors = _this select 2; if (isNil ("_vectors")) then {_vectors = [[0,0,0],[0,0,0]]};
+		_dir = _this select 3; if (isNil ("_dir")) then {_dir = getDir _charge};
+			
+		if (isNull _charge) exitwith {};
+		
+		if ((_posASL distance [0,0,0]) >= 0.1) then
+		{
+			_charge setPosASL _posASL;
+		};
+			
+		if (((_vectors select 0) distance [0,0,0]) >= 0.1) then
+		{
+			_charge setVectorDirandUp _vectors;
+		}
+		else
+		{
+			_charge setVectorUP (surfaceNormal _posASL);
+			_charge setDir _dir;
+		};
+	};
+};
+
 if ((typename placeSurface) == "OBJECT") then
 {
 	if ((placeSurface iskindof "LandVehicle") or (placeSurface iskindof "Helicopter") or (placeSurface iskindof "Ship") or (placeSurface iskindof "Plane")) then
@@ -34,7 +63,6 @@ if ((typename placeSurface) == "OBJECT") then
 		
 		_ndV = [0.001,0.001,0.001];
 		_nuV = [0.001,0.001,0.001];
-		
 			
 		for "_i" from 0 to 2 do
 		{
@@ -44,7 +72,8 @@ if ((typename placeSurface) == "OBJECT") then
 		};
 		
 		_charge attachTo [placeSurface,_pos];
-		_charge setVectorDirandUP [_cdV,_cuV];	
+		_charge setVectorDirandUP [_cdV,_cuV]; // this should really be nVectors as an accurate dot product of the sVectors and cVectors
+		nul = [[_charge,nil,[_cdV,_cuV],nil],"zor_Move_Charge",true,false] spawn BIS_fnc_MP;
 	}
 	else
 	{

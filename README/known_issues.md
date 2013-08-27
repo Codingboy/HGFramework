@@ -1,0 +1,19 @@
+# Known Issues
+- [ ] Codingboy/HGFramework#1 duplicate items
+- [ ] Codingboy/HGFramework#2 timeacceleration clouds
+- ~~ [ ] Codingboy/HGFramework#3 AI setPos~~
+- ~~ [ ] Codingboy/HGFramework#4 lags on start~~
+- ~~ [ ] Codingboy/HGFramework#5 items in supportbox~~
+- ~~ [ ] Codingboy/HGFramework#6 items in supplybox~~
+- [ ] Codingboy/HGFramework#7 revive system
+- [ ] Codingboy/HGFramework#8 eat/drink animation
+- [ ] Codingboy/HGFramework#9 poison
+- [x] Codingboy/HGFramework#10 infections chance
+- [x] Codingboy/HGFramework#11 localization
+- [ ] Codingboy/HGFramework#12 custom items
+- [x] Codingboy/HGFramework#13 drone
+- [ ] Codingboy/HGFramework#14 groupmanagement
+- [ ] Codingboy/HGFramework#15 infection not healed
+- ~~ [ ] Codingboy/HGFramework#16 view playerhud if dead~~
+- [ ] Codingboy/HGFramework#17 disable own hud if dead
+- ~~ [ ] Codingboy/HGFramework#18 jump to death~~

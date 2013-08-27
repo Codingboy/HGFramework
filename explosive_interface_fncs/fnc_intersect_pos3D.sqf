@@ -20,14 +20,13 @@ _camPosOff = ATLtoASL (positionCameraToWorld [0,0,1]);
 _camPosOffD = ATLtoASL (positionCameraToWorld [0,-0.01,1]);
 _camPosOffR = ATLtoASL (positionCameraToWorld [0.01,0,1]);
 
-
-if (isnil("fnc_intersects")) then {
+if (isnil("fnc_intersects3D")) then {
 fnc_intersects3D = compile "
 	private ['_pos','_infront','_obstructed','_object','_objects'];
 	_unit = _this select 0;
 	_pos = _this select 1;
 	_checkdist = _this select 2;
-
+	
 	_vX = (_camPosOff select 0) - (_camPos select 0);
 	_vY = (_camPosOff select 1) - (_camPos select 1);
 	_vZ = (_camPosOff select 2) - (_camPos select 2);

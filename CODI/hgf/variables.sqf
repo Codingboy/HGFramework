@@ -54,6 +54,7 @@ CODI_hgf_temperatureBadFactor = CODI_hgf_temperatureBadFactor / 10;
 //CODI_hgf_damagesystemValue = CODI_hgf_damagesystemValue / 100;
 CODI_hgf_infectionDamage = CODI_hgf_infectionDamage / 1000;
 CODI_hgf_infectionChance = CODI_hgf_infectionChance / 10000;
+tao_foldmap_mapScale = tao_foldmap_mapScale / 100;
 
 CODI_hgf_startColor = "ColorBlack";
 CODI_hgf_crateColor = "ColorOrange";

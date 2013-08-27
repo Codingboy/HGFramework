@@ -469,6 +469,14 @@ class Params
 		texts[] = {"false","true"};
 		default = 0;
 	};
+	//how much the tao foldmap is magnified (lower values -> more magnification)
+	class tao_foldmap_mapScale
+	{
+		title = "tao_foldmap_mapScale";
+		values[] = {5,10,15,20,25};
+		texts[] = {"0.05","0.10","0.15","0.20","0.25"};
+		default = 10;
+	};
 
 
 

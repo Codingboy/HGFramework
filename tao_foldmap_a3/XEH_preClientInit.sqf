@@ -5,9 +5,6 @@ ADDON = false;
 
 /////////////////////////////////////////////////////////////////////////////////
 
-// TODO: Is this ideal?
-tao_foldmap_mapScale = 0.10;
-
 // Define values for positioning the foldmap.
 #define tao_foldmap_leftX  0.02
 #define tao_foldmap_rightX  0.66
@@ -162,7 +159,6 @@ tao_foldMap_drawMapLoop = {
 		};
 		
 		// Auto-recenter needed check -- if player has moved more than 100m since last redaw, recenter the map
-		hint format["%1 %2 %3", tao_foldmap_oldPos2, getPos player, tao_foldmap_oldPos2 distance getPos player];
 		if ((tao_foldmap_oldPos2 distance getPos player) > 100) then {
 			tao_foldmap_centerpos = getpos player;
 			tao_foldmap_oldPos2 = getPos player;

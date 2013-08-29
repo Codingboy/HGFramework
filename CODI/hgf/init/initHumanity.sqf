@@ -87,14 +87,22 @@ if (!isDedicated) then
 		};
 		if (surfaceIsWater[(getPos _player) select 0, (getPos _player) select 1]) then
 		{
-			if (uniform _player == "U_B_Wetsuit") then
+			if (_temperature > CODI_hgf_temperatureAvg) then
 			{
-				_temperature = _temperature - 1*CODI_hgf_temperatureChangeValue;
+				_temperature = _temperature - 3*CODI_hgf_temperatureChangeValue;
 			}
 			else
 			{
-				_temperature = _temperature - 5*CODI_hgf_temperatureChangeValue;
+				_temperature = _temperature - CODI_hgf_temperatureBadFactor*3*CODI_hgf_temperatureChangeValue;
 			};
+		};
+		if (underwater _player) then
+		{
+			_temperature = _temperature - 5*CODI_hgf_temperatureChangeValue;
+		};
+		if (uniform _player == "U_B_Wetsuit") then
+		{
+			_temperature = _temperature + 4*CODI_hgf_temperatureChangeValue;
 		};
 		_fire = objNull;
 		_nearObjects = nearestObjects [vehicle _player,[],10];

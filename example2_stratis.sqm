@@ -1,0 +1,1292 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_map_stratis"
+	};
+	randomSeed=1549745;
+	class Intel
+	{
+		startWeather=0;
+		startWind=0;
+		startWaves=0.099999994;
+		startGust=1;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		forecastGust=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=15;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=12;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5381.7695,3.1134448,3768.9058};
+					azimut=138.77;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5379.4312,4.1776938,3776.2632};
+					azimut=138.77;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5368.2124,2.5184937,3752.8359};
+					azimut=138.77;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5364.9971,4.1044655,3762.2102};
+					azimut=138.77;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5399.9058,2.510951,3776.2285};
+					azimut=138.77;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5397.8193,4.0108814,3783.543};
+					azimut=138.77;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5411.793,2.2460272,3775.741};
+					azimut=138.77;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5408.5225,3.5232606,3782.3167};
+					azimut=138.77;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5351.186,10.9155,3770.606};
+					azimut=138.77;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5354.3057,11.118004,3775.6909};
+					azimut=138.77;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5355.1865,2.6195385,3727.1873};
+					azimut=138.77;
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5356.9443,2.1528864,3736.7151};
+					azimut=138.77;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5389.5361,1.8692175,3768.2573};
+					azimut=138.77;
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5390.1904,3.4318738,3777.5745};
+					azimut=138.77;
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5378.979,1.3588599,3748.5618};
+					azimut=138.77;
+					special="NONE";
+					id=14;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5375.6084,3.0254438,3762.5994};
+					azimut=138.77;
+					special="NONE";
+					id=15;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5373.627,1.2743957,3736.5269};
+					azimut=138.77;
+					special="NONE";
+					id=16;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5366.3823,2.2161913,3743.3911};
+					azimut=138.77;
+					special="NONE";
+					id=17;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5397.4414,1.3821278,3763.8279};
+					azimut=138.77;
+					special="NONE";
+					id=18;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5388.8867,1.4192334,3759.4932};
+					azimut=138.77;
+					special="NONE";
+					id=19;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5366.4834,7.4830694,3778.9421};
+					azimut=138.77;
+					special="NONE";
+					id=20;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5361.2671,9.3767262,3778.6267};
+					azimut=138.77;
+					special="NONE";
+					id=21;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5357.0732,3.3497052,3748.9382};
+					azimut=138.77;
+					special="NONE";
+					id=22;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={5348.1162,3.0437841,3741.2791};
+					azimut=138.77;
+					special="NONE";
+					id=23;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=109;
+		class Item0
+		{
+			position[]={2055.3411,6.1162996,2790.2808};
+			name="normalloot";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item1
+		{
+			position[]={1877.4536,14.185464,2765.6143};
+			name="specialloot";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={2443.6284,142.39511,2485.166};
+			name="Southern Hill";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item3
+		{
+			position[]={2075.0742,62.094669,2450.1392};
+			name="start";
+			type="hd_start";
+			colorName="ColorBlack";
+		};
+		class Item4
+		{
+			position[]={2275.1606,9.1014719,2828.6001};
+			name="start_1";
+			type="hd_start";
+			colorName="ColorBlack";
+		};
+		class Item5
+		{
+			position[]={2338.928,86.970116,2989.8047};
+			name="start_2";
+			type="hd_start";
+			colorName="ColorBlack";
+		};
+		class Item6
+		{
+			position[]={2039.0242,31.792442,2904.7549};
+			name="start_3";
+			type="hd_start";
+			colorName="ColorBlack";
+		};
+		class Item7
+		{
+			position[]={2343.2017,83.666298,2673.3037};
+			name="Forest";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item8
+		{
+			position[]={1970.4949,1.6797522,2713.752};
+			name="Beach";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item9
+		{
+			position[]={1941.1283,2.5082827,2595.1011};
+			name="Coast";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item10
+		{
+			position[]={1877.1326,13.946045,2753.6045};
+			name="Coasthouse";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item11
+		{
+			position[]={1970.6229,24.595743,2820.8643};
+			name="Church";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item12
+		{
+			position[]={2337.0801,87.391586,2988.0264};
+			name="Northern Hill";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item13
+		{
+			position[]={2130.0989,5.3052154,2814.5586};
+			name="Tree Hill";
+			type="hd_end";
+			colorName="ColorGreen";
+		};
+		class Item14
+		{
+			position[]={1970.5529,24.820471,2825.3765};
+			name="specialloot_1";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item15
+		{
+			position[]={2102.0391,29.873329,2581.8506};
+			name="specialloot_2";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item16
+		{
+			position[]={2057.3706,2.9227283,2752.4756};
+			name="specialloot_3";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item17
+		{
+			position[]={2366.7478,51.319569,2909.8906};
+			name="specialloot_4";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item18
+		{
+			position[]={2444.3665,142.71872,2476.79};
+			name="specialloot_5";
+			type="hd_dot";
+			colorName="ColorRed";
+		};
+		class Item19
+		{
+			position[]={1870.1561,13.969251,2752.1626};
+			name="normalloot_1";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item20
+		{
+			position[]={1883.5337,14.3318,2764.395};
+			name="normalloot_2";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item21
+		{
+			position[]={1869.1407,13.889578,2739.2739};
+			name="normalloot_3";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item22
+		{
+			position[]={1879.1144,13.754635,2737.4839};
+			name="normalloot_4";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item23
+		{
+			position[]={1885.692,14.039456,2749.9565};
+			name="normalloot_5";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item24
+		{
+			position[]={2008.4502,7.9854469,2650.4678};
+			name="normalloot_6";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item25
+		{
+			position[]={2023.4304,5.985292,2660.6455};
+			name="normalloot_7";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item26
+		{
+			position[]={2025.228,5.8841553,2672.1914};
+			name="normalloot_8";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item27
+		{
+			position[]={2008.4502,6.0240188,2668.5996};
+			name="normalloot_9";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item28
+		{
+			position[]={1976.7781,7.8404732,2652.3496};
+			name="normalloot_10";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item29
+		{
+			position[]={1981.2292,7.2053261,2662.7837};
+			name="normalloot_11";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item30
+		{
+			position[]={2031.3912,9.7167921,2648.1587};
+			name="normalloot_12";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item31
+		{
+			position[]={2009.6542,3.7629459,2743.2739};
+			name="normalloot_13";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item32
+		{
+			position[]={2018.6023,2.8645256,2734.8218};
+			name="normalloot_14";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item33
+		{
+			position[]={2013.2878,3.168849,2719.6509};
+			name="normalloot_15";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item34
+		{
+			position[]={2025.8907,3.0641408,2725.2646};
+			name="normalloot_16";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item35
+		{
+			position[]={2013.5916,3.675185,2707.8936};
+			name="normalloot_17";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item36
+		{
+			position[]={2003.7218,2.8700869,2725.6436};
+			name="normalloot_18";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item37
+		{
+			position[]={1991.4225,2.7410934,2717.8301};
+			name="normalloot_19";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item38
+		{
+			position[]={2005.9236,3.239702,2709.6382};
+			name="normalloot_20";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item39
+		{
+			position[]={2051.8958,8.2125912,2672.8965};
+			name="normalloot_21";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item40
+		{
+			position[]={2043.3125,6.9742494,2682.0132};
+			name="normalloot_22";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item41
+		{
+			position[]={2046.8606,5.9142284,2693.4121};
+			name="normalloot_23";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item42
+		{
+			position[]={2049.1941,6.27772,2691.9961};
+			name="normalloot_24";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item43
+		{
+			position[]={2051.1106,6.9248099,2689.2905};
+			name="normalloot_25";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item44
+		{
+			position[]={2065.2773,8.9787159,2676.3848};
+			name="normalloot_26";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item45
+		{
+			position[]={2078.9209,9.5839844,2691.1348};
+			name="normalloot_27";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item46
+		{
+			position[]={2071.7085,7.6960063,2700.6924};
+			name="normalloot_28";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item47
+		{
+			position[]={2063.8125,6.8149719,2703.1958};
+			name="normalloot_29";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item48
+		{
+			position[]={2065.8625,8.2770271,2691.5142};
+			name="normalloot_30";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item49
+		{
+			position[]={2034.7131,5.0083475,2698.2305};
+			name="normalloot_31";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item50
+		{
+			position[]={2032.491,3.4369547,2717.4048};
+			name="normalloot_32";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item51
+		{
+			position[]={2043.2648,3.8995013,2712.6953};
+			name="normalloot_33";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item52
+		{
+			position[]={2037.2047,5.2498775,2696.6831};
+			name="normalloot_34";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item53
+		{
+			position[]={2048.5254,3.7865331,2733.4512};
+			name="normalloot_35";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item54
+		{
+			position[]={2041.3318,3.4106243,2731.6548};
+			name="normalloot_36";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item55
+		{
+			position[]={2039.9484,2.7644856,2742.7119};
+			name="normalloot_37";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item56
+		{
+			position[]={2069.9675,5.7218046,2727.9229};
+			name="normalloot_38";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item57
+		{
+			position[]={2083.9509,7.8949165,2720.646};
+			name="normalloot_39";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item58
+		{
+			position[]={2091.3567,7.8363943,2727.1499};
+			name="normalloot_40";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item59
+		{
+			position[]={2089.0422,7.8397889,2739.7485};
+			name="normalloot_41";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item60
+		{
+			position[]={2073.9509,5.9740462,2741.0972};
+			name="normalloot_42";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item61
+		{
+			position[]={2084.239,6.4262052,2750.0488};
+			name="normalloot_43";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item62
+		{
+			position[]={1953.0302,5.2704759,2749.5405};
+			name="normalloot_44";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item63
+		{
+			position[]={1963.3021,3.0459645,2735.1719};
+			name="normalloot_45";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item64
+		{
+			position[]={1969.8079,4.4245915,2750.9092};
+			name="normalloot_46";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item65
+		{
+			position[]={1992.5002,8.5142231,2762.4038};
+			name="normalloot_47";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item66
+		{
+			position[]={2003.6605,9.6215963,2771.8101};
+			name="normalloot_48";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item67
+		{
+			position[]={2047.7914,5.3788085,2769.6987};
+			name="normalloot_49";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item68
+		{
+			position[]={2038.6321,4.8421831,2760.5474};
+			name="normalloot_50";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item69
+		{
+			position[]={2024.08,6.2323942,2763.7119};
+			name="normalloot_51";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item70
+		{
+			position[]={2036.1497,6.0507717,2775.6001};
+			name="normalloot_52";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item71
+		{
+			position[]={2074.1436,4.8819346,2779.9526};
+			name="normalloot_53";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item72
+		{
+			position[]={2365.1086,110.6412,2562.002};
+			name="normalloot_54";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item73
+		{
+			position[]={2445.4502,73.130409,2671.54};
+			name="normalloot_55";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item74
+		{
+			position[]={2270.54,27.216017,2776.0605};
+			name="normalloot_56";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item75
+		{
+			position[]={2194.3831,53.30788,2675.7202};
+			name="normalloot_57";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item76
+		{
+			position[]={2278.9089,76.406181,2629.7314};
+			name="normalloot_58";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item77
+		{
+			position[]={2358.4136,46.364437,2750.9756};
+			name="normalloot_59";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item78
+		{
+			position[]={2364.2717,89.171997,2648.127};
+			name="normalloot_60";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item79
+		{
+			position[]={2281.4197,51.131832,2708.3311};
+			name="normalloot_61";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item80
+		{
+			position[]={2507.3997,27.02858,2739.8521};
+			name="normalloot_62";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item81
+		{
+			position[]={2515.749,112.76223,2536.9165};
+			name="normalloot_63";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item82
+		{
+			position[]={2420.3435,98.103195,2606.3188};
+			name="normalloot_64";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item83
+		{
+			position[]={2273.8877,91.501724,2555.3125};
+			name="normalloot_65";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item84
+		{
+			position[]={2183.5032,28.867872,2754.3198};
+			name="normalloot_66";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item85
+		{
+			position[]={2386.0308,13.170796,2827.0669};
+			name="normalloot_67";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item86
+		{
+			position[]={2115.0413,36.157646,2985.6362};
+			name="normalloot_68";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item87
+		{
+			position[]={2010.2932,10.245975,2975.915};
+			name="normalloot_69";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item88
+		{
+			position[]={2056.3096,18.654703,2996.3804};
+			name="normalloot_70";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item89
+		{
+			position[]={2005.3279,5.7493925,3020.2427};
+			name="normalloot_71";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item90
+		{
+			position[]={1939.1892,3.6946669,2995.4619};
+			name="normalloot_72";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item91
+		{
+			position[]={2067.792,11.325546,3048.6948};
+			name="normalloot_73";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item92
+		{
+			position[]={2132.6475,25.78923,3027.8267};
+			name="normalloot_74";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item93
+		{
+			position[]={2196.8611,17.785244,3093.5371};
+			name="normalloot_75";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item94
+		{
+			position[]={2209.2896,59.871361,2963.668};
+			name="normalloot_76";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item95
+		{
+			position[]={2154.915,36.012032,3000.4038};
+			name="normalloot_77";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item96
+		{
+			position[]={2266.2537,58.267292,3026.7915};
+			name="normalloot_78";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item97
+		{
+			position[]={2201.522,37.453033,3044.9009};
+			name="normalloot_79";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item98
+		{
+			position[]={2291.1106,35.353985,3087.3281};
+			name="normalloot_80";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item99
+		{
+			position[]={2319.5928,72.746292,3027.8267};
+			name="normalloot_81";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item100
+		{
+			position[]={2411.7708,65.037849,3034.5527};
+			name="normalloot_82";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item101
+		{
+			position[]={2350.6638,54.872185,3063.5278};
+			name="normalloot_83";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item102
+		{
+			position[]={2384.3245,33.958466,3110.6113};
+			name="normalloot_84";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item103
+		{
+			position[]={2540.7073,59.218597,2664.0996};
+			name="normalloot_85";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item104
+		{
+			position[]={2471.8096,28.471264,2806.4429};
+			name="normalloot_86";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item105
+		{
+			position[]={2436.1929,23.849304,2748.689};
+			name="normalloot_87";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item106
+		{
+			position[]={2355.3752,123.9695,2494.1958};
+			name="normalloot_88";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item107
+		{
+			position[]={1985.8785,5.7079549,2757.2998};
+			name="normalloot_89";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item108
+		{
+			position[]={1992.0134,9.6302462,2774.2163};
+			name="normalloot_90";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={2199.8059,33.613029,2750.6221};
+			a=450;
+			b=450;
+			interruptable=1;
+			age="UNKNOWN";
+			name="allowed1";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=14971648;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=9045151;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=7595062;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogBase=0.001;
+		forecastFogBase=0.001;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};

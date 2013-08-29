@@ -1,4 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
+<Project name="HGFramework">
+	<Key ID="STR_HINT_ARENAREADY">
+		<Original>The arena is ready for you now.</Original>
+		<German>Die Arena ist jetzt für dich bereit.</German>
+	</Key>
+	<Key ID="STR_HINT_DONTMOVE">
+		<Original>DO NOT MOVE ANYLONGER!</Original>
+		<German>BEWEG DICH NICHT MEHR!</German>
+	</Key>
+	<Key ID="STR_HINT_TELEPORT">
+		<Original>You will be teleported in %1 seconds.</Original>
+		<German>Du wirst in %1 Sekunden teleportiert.</German>
+	</Key>
+	<Key ID="STR_HINT_TEAMUP">
+		<Original>You have some time to team up.</Original>
+		<German>Du hast etwas Zeit um ein Team zu bilden.</German>
+	</Key>
+	<Key ID="STR_HINT_BORDER">
+		<Original>Return to arena within %1 seconds!</Original>
+		<German>Begib dich innerhalb von %1 Sekunden zurück zur Arena!</German>
+	</Key>
+	<Key ID="STR_HINT_DEATHZONE_01">
+		<Original>You have %1 minutes to reach the safezone &quot;%2&quot;</Original>
+		<German>Du hast %1 Minuten um die sichere Zone &quot;%2&quot; zu erreichen.</German>
+	</Key>
+	<Key ID="STR_HINT_DEATHZONE_02">
+		<Original>The deathzone is active in %1 seconds.</Original>
+		<German>Die Todeszone ist in %1 Sekunden aktiv.</German>
+	</Key>
+	<Key ID="STR_HINT_DEATHZONE_03">
+		<Original>The deathzone is active!</Original>
+		<German>Die Todeszone ist aktiv!</German>
+	</Key>
+	<Key ID="STR_CUT_THIRST">
+		<Original>Thirst:</Original>
+		<German>Durst:</German>
+	</Key>
+	<Key ID="STR_CUT_HUNGER">
+		<Original>Hunger:</Original>
+		<German>Hunger:</German>
+	</Key>
+	<Key ID="STR_CUT_FATIGUE">
+		<Original>Fatigue:</Original>
+		<German>Müdigkeit:</German>
+	</Key>
+	<Key ID="STR_CUT_DAMAGE">
+		<Original>Damage:</Original>
+		<German>Schaden:</German>
+	</Key>
+	<Key ID="STR_CUT_TEMPERATURE">
+		<Original>Temperature:</Original>
+		<German>Temperatur:</German>
+	</Key>
+	<Key ID="STR_SOUND_HAPPYHUNGERGAMES">
+		<Original>CODI_hgf_sound_eng_HappyHungerGames</Original>
+		<German>CODI_hgf_sound_ger_HappyHungerGames</German>
+	</Key>
+	<Key ID="STR_DEBR_SURVIVED">
+		<Original>SURVIVED!</Original>
+		<German>ÜBERLEBT!</German>
+	</Key>
+	<Key ID="STR_DEBR_SURVIVEDSUBTITLE">
+		<Original>You survived the Hangar Games!</Original>
+		<German>Du hast die Hangar Spiele überlebt!</German>
+	</Key>
+	<Key ID="STR_DEBR_SURVIVEDDESCRIPTION">
+		<Original>Congratulations! You are the winner of the Hangar Games!</Original>
+		<German>Herzlichen Glückwunsch! Du bist der Gewinner der Hangar Spiele!</German>
+	</Key>
+	<Key ID="STR_DEBR_KILLED">
+		<Original>KILLED!</Original>
+		<German>GETÖTET!</German>
+	</Key>
+	<Key ID="STR_DEBR_KILLEDSUBTITLE">
+		<Original>You were killed during the Hangar Games!</Original>
+		<German>Du wurdest während der Hunger Spiele getötet!</German>
+	</Key>
+	<Key ID="STR_DEBR_KILLEDDESCRIPTION">
+		<Original>You died in the Hangar Games. No parent should have to bury their child...</Original>
+		<German>Du starbst in den Hangar Spielen. Kein Elternteil sollte sein eigenes Kind begraben...</German>
+	</Key>
+	<Key ID="STR_BRIEF_HANGARGAMES">
+		<Original>Hangar Games</Original>
+		<German>Hangar Spiele</German>
+	</Key>
+	<Key ID="STR_HINT_INFECTED">
+		<Original>Your wounds got infected!</Original>
+		<German>Deine Wunden haben sich entzündet!</German>
+	</Key>
+	<Key ID="STR_HINT_INFECTIONHEALED">
+		<Original>Your infected wounds have been treated.</Original>
+		<German>Deine entzündeten Wunden wurden behandelt.</German>
+	</Key>
+	<Key ID="STR_ACT_DRINK">
+		<Original>drink</Original>
+		<German>trinken</German>
+	</Key>
+	<Key ID="STR_ACT_EAT">
+		<Original>eat</Original>
+		<German>essen</German>
+	</Key>
+	<Key ID="STR_ACT_SLEEP">
+		<Original>sleep</Original>
+		<German>schlafen</German>
+	</Key>
+	<Key ID="STR_ACT_REVIVE">
+		<Original>revive</Original>
+		<German>wiederbeleben</German>
+	</Key>
+	<Key ID="STR_ACT_KILL">
+		<Original>kill</Original>
+		<German>töten</German>
+	</Key>
+	<Key ID="STR_ACT_WINDINFORMATION">
+		<Original>show windinformation</Original>
+		<German>zeige Windinformation</German>
+	</Key>
+	<Key ID="STR_HINT_SLEEPTIME">
+		<Original>remaining sleeptime: %1 seconds</Original>
+		<German>verbleibende Zeit zu Schlafen: %1 Sekunden</German>
+	</Key>
+</Project>
 <Project name="Virtual Ammobox System">
 	<Package name="Main">
 		<Key ID="STR_VAS_Main_Weapons">

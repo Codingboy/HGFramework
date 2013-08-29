@@ -1,6 +1,8 @@
 private ["_null","_initStartBox","_initBoxes"];
 _null = [] execVM "CODI\hgf\variables.sqf";
 waitUntil {scriptDone _null};
+_null = [] execVM "patchVariables.sqf";
+waitUntil {scriptDone _null};
 _null = [] execVM "CODI\hgf\functions.sqf";
 waitUntil {scriptDone _null};
 

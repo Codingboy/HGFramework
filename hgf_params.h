@@ -80,14 +80,6 @@ class Params
 		texts[] = {"false","true"};
 		default = 1;
 	};
-	//1 -> disables nv and tv for all vehicles
-	class CODI_hgf_dayz
-	{
-		title = "CODI_hgf_dayz";
-		values[] = {0,1};
-		texts[] = {"false","true"};
-		default = 1;
-	};
 
 
 
@@ -200,7 +192,7 @@ class Params
 		texts[] = {"60", "120", "180", "240", "300", "360", "420", "480", "540", "600"};
 		default = 120;
 	};
-	//chance for a normal loot crate to spawn; 0 -> no loot crate will spawn; 100 -> all orange box have loot; reduce it to add a little random to the mission ~90
+	//chance for a normal loot crate to spawn; 0 -> no loot crate will spawn; 100 -> all orange box have loot; reduce it to add a little random to the mission
 	class CODI_hgf_crateSpawnChance
 	{
 		title = "CODI_hgf_crateSpawnChance";
@@ -316,7 +308,6 @@ class Params
 		texts[] = {"true", "false"};
 		default = 0;
 	};
-
 	//radius of the safezone
 	class CODI_hgf_safeZoneDistance
 	{
@@ -476,6 +467,14 @@ class Params
 		values[] = {5,10,15,20,25};
 		texts[] = {"0.05","0.10","0.15","0.20","0.25"};
 		default = 10;
+	};
+	//1 -> enables icon based hud
+	class CODI_hgf_dayz
+	{
+		title = "CODI_hgf_dayz";
+		values[] = {0,1};
+		texts[] = {"false","true"};
+		default = 1;
 	};
 
 

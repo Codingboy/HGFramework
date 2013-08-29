@@ -38,7 +38,7 @@ _ret = [];
 				};
 			};
 			
-			case (_type in [1,2,4,5,4096] && _x != "NVGoggles") :
+			case (_type in [1,2,4,5,4096] && _itemInfo == 0) :
 			{
 				switch(typeName _filter) do
 				{
@@ -60,7 +60,7 @@ _ret = [];
 				};
 			};
 			
-			case (_type in [4096,131072] && _x != "Binocular") :
+			case (_type in [4096,131072] && _itemInfo != 0) :
 			{
 				switch(typeName _filter) do
 				{

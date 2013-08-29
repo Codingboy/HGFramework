@@ -14,7 +14,7 @@
 * [Nicolas](http://www.armaholic.com/users.php?m=details&id=12131&u=Nicolas) & GossamerSolid & Sanjo for [Notepad++ SQF Syntax Highlighting](http://www.armaholic.com/page.php?id=8680)
 * [Taosenai](http://forums.bistudio.com/member.php?77029-Taosenai) & Dslyecxi/zx64 for [Tao Folding Map v2.1](http://www.armaholic.com/page.php?id=18963)
 * [austin(medic)](http://www.armaholic.com/users.php?m=details&id=31283&u=austin%28medic%29) for testing on a dedicated server & reviewing my code & [Reveal Script](http://www.armaholic.com/page.php?id=21691) & [In Depth Damage Effects](http://www.armaholic.com/page.php?id=21951)
-* [Tonic](http://www.armaholic.com/users.php?m=details&id=23944&u=Tonic) & Kronzky & SaMatra & Dslyecxi & Tyrghen & naong & Coding :D for [Virtual Ammobox System v1.7](http://www.armaholic.com/page.php?id=19134)
+* [Tonic](http://www.armaholic.com/users.php?m=details&id=23944&u=Tonic) & Kronzky & SaMatra & Dslyecxi & Tyrghen & naong & Coding :D & El nabot & czesiek77 for [Virtual Ammobox System v1.8](http://www.armaholic.com/page.php?id=19134)
 * [Terox](http://forums.bistudio.com/member.php?43646-Terox) for [dedicated server tutorial](http://forums.bistudio.com/showthread.php?147537-Tutorial-How-to-run-ArmA3-on-a-dedicated-server)
 * [Pirin](http://www.armaholic.com/users.php?m=details&id=4754&u=Pirin) for helping me fixing my addAction distance bug & hint to use .jpg instead of .paa &&& you are awesome and have an excellent reputation
 * tehcyx for the name "Hangar Games" (I like it a lot!)

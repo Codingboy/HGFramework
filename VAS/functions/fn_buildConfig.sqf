@@ -1,8 +1,8 @@
 /*
-	@version: 1.7
+	@version: 1.8
 	@file_name: build_config.sqf
 	@file_author: TAW_Tonic
-	@file_edit: 8/2/2013
+	@file_edit: 8/27/2013
 	@file_description: If preload is enabled, it will build our preloaded config, otherwise fetches everything from the config.
 */
 private["_cfg","_type","_temp","_ret","_master","_class","_details","_displayName","_scope","_type","_str","_itemInfo"];
@@ -49,7 +49,6 @@ switch(_cfg) do
 					}
 						else
 					{
-					
 						if(_str != "ACRE" && !(_base in VAS_r_weapons) && !(_class in VAS_r_weapons)) then
 						{
 							_temp set[count _temp,_displayName];

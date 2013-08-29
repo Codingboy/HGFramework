@@ -410,7 +410,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=404;
+		items=424;
 		class Item0
 		{
 			position[]={20702.363,4.6499214,19460.047};
@@ -3238,6 +3238,146 @@ class Mission
 			name="normalloot_367";
 			type="hd_dot";
 			colorName="ColorOrange";
+		};
+		class Item404
+		{
+			position[]={20627.953,6.1601272,19397.783};
+			name="vehicle";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item405
+		{
+			position[]={20958.605,15.59273,19265.65};
+			name="vehicle_1";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item406
+		{
+			position[]={21031.973,28.59116,18981.395};
+			name="vehicle_2";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item407
+		{
+			position[]={20608.512,37.072292,18811.523};
+			name="vehicle_3";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item408
+		{
+			position[]={20250.34,15.356763,19226.764};
+			name="vehicle_4";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item409
+		{
+			position[]={20962.594,12.023428,19494.824};
+			name="vehicle_5";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item410
+		{
+			position[]={20592.863,51.340149,20107.967};
+			name="vehicle_6";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item411
+		{
+			position[]={20119.268,18.475498,20031.746};
+			name="vehicle_7";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item412
+		{
+			position[]={20167.664,8.0401373,19722.492};
+			name="vehicle_8";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item413
+		{
+			position[]={20364.104,5.0759764,19516.523};
+			name="vehicle_9";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item414
+		{
+			position[]={20135.414,4.7953906,19588.002};
+			name="vehicle_10";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item415
+		{
+			position[]={21587.717,71.842224,19626.205};
+			name="vehicle_11";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item416
+		{
+			position[]={21134.824,13.015456,19870.453};
+			name="vehicle_12";
+			type="hd_dot";
+			colorName="ColorBlue";
+		};
+		class Item417
+		{
+			position[]={20644.922,-0.0019811539,19502.729};
+			name="boat";
+			type="hd_dot";
+			colorName="ColorWhite";
+		};
+		class Item418
+		{
+			position[]={21056.408,-0.011780987,19932.609};
+			name="boat_1";
+			type="hd_dot";
+			colorName="ColorWhite";
+		};
+		class Item419
+		{
+			position[]={20741.922,0,20437.182};
+			name="boat_2";
+			type="hd_dot";
+			colorName="ColorWhite";
+		};
+		class Item420
+		{
+			position[]={19834.58,-0.039709553,19745.67};
+			name="boat_3";
+			type="hd_dot";
+			colorName="ColorWhite";
+		};
+		class Item421
+		{
+			position[]={20557.555,0.013450983,19677.762};
+			name="boat_4";
+			type="hd_dot";
+			colorName="ColorWhite";
+		};
+		class Item422
+		{
+			position[]={21143.645,-0.26280469,20226.602};
+			name="boat_5";
+			type="hd_dot";
+			colorName="ColorWhite";
+		};
+		class Item423
+		{
+			position[]={20343.881,0.067912392,19716.771};
+			name="boat_6";
+			type="hd_dot";
+			colorName="ColorWhite";
 		};
 	};
 	class Sensors

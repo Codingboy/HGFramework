@@ -24,7 +24,7 @@ class CfgDebriefing
 		subtitle = "$STR_DEBR_SURVIVEDSUBTITLE";
 		description = "$STR_DEBR_SURVIVEDDESCRIPTION";
 		pictureBackground = "CODI\hgf\media\hungergames1920x960.jpg";
-		picture = "CODI\hgf\media\hungergames1024x1024.jpg";
+		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1.0};
 	};
 	class Killed
@@ -33,7 +33,7 @@ class CfgDebriefing
 		subtitle = "$STR_DEBR_KILLEDSUBTITLE";
 		description = "$STR_DEBR_KILLEDDESCRIPTION";
 		pictureBackground = "CODI\hgf\media\hungergames1920x960.jpg";
-		picture = "CODI\hgf\media\hungergames1024x1024.jpg";
+		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1.0};
 	};
 };

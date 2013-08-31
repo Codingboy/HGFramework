@@ -412,7 +412,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=558;
+		items=640;
 		class Item0
 		{
 			position[]={20702.363,4.6499214,19460.047};
@@ -3348,7 +3348,7 @@ class Mission
 		};
 		class Item419
 		{
-			position[]={20738.85,0.32020023,20443.006};
+			position[]={20774.031,6.5963803e-005,20319.096};
 			name="boat_2";
 			type="hd_dot";
 			colorName="ColorWhite";
@@ -3635,7 +3635,7 @@ class Mission
 		};
 		class Item460
 		{
-			position[]={20843.184,2.1840675,19655.961};
+			position[]={20849.986,2.0770361,19666.021};
 			name="normalloot_404";
 			type="hd_dot";
 			colorName="ColorOrange";
@@ -3698,14 +3698,14 @@ class Mission
 		};
 		class Item469
 		{
-			position[]={20914.104,2.4718213,19805.107};
+			position[]={20920.332,2.205503,19814.361};
 			name="normalloot_413";
 			type="hd_dot";
 			colorName="ColorOrange";
 		};
 		class Item470
 		{
-			position[]={20906.756,2.1455712,19780.365};
+			position[]={20909.787,1.8120117,19768.42};
 			name="normalloot_414";
 			type="hd_dot";
 			colorName="ColorOrange";
@@ -4316,6 +4316,580 @@ class Mission
 		{
 			position[]={20448.502,27.013435,20170.549};
 			name="normalloot_501";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item558
+		{
+			position[]={20743.244,2.0460131,20339.271};
+			name="normalloot_502";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item559
+		{
+			position[]={20742.402,1.843877,20317.064};
+			name="normalloot_503";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item560
+		{
+			position[]={20745.432,1.8631006,20294.855};
+			name="normalloot_504";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item561
+		{
+			position[]={20752,1.7734082,20268.611};
+			name="normalloot_505";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item562
+		{
+			position[]={20764.967,1.5049658,20245.895};
+			name="normalloot_506";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item563
+		{
+			position[]={20833.016,2.3151367,20172.652};
+			name="normalloot_507";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item564
+		{
+			position[]={20828.27,2.0560377,20155.391};
+			name="normalloot_508";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item565
+		{
+			position[]={20829.598,1.8086327,20135.471};
+			name="normalloot_509";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item566
+		{
+			position[]={20841.938,1.711758,20114.037};
+			name="normalloot_510";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item567
+		{
+			position[]={20856.176,1.6259813,20100.189};
+			name="normalloot_511";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item568
+		{
+			position[]={20493.633,1.9059887,19828.883};
+			name="normalloot_512";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item569
+		{
+			position[]={20459.73,2.218462,19829.033};
+			name="normalloot_513";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item570
+		{
+			position[]={20430.607,1.8865333,19827.84};
+			name="normalloot_514";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item571
+		{
+			position[]={20397.902,1.8815894,19825.602};
+			name="normalloot_515";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item572
+		{
+			position[]={20364.598,2.2404296,19824.557};
+			name="normalloot_516";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item573
+		{
+			position[]={20336.566,1.7019068,19812.215};
+			name="normalloot_517";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item574
+		{
+			position[]={20312.32,1.9421825,19791.354};
+			name="normalloot_518";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item575
+		{
+			position[]={20291.863,2.3918066,19772.248};
+			name="normalloot_519";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item576
+		{
+			position[]={20266.174,3.029165,19748.076};
+			name="normalloot_520";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item577
+		{
+			position[]={20263.289,2.3534472,19647.254};
+			name="normalloot_521";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item578
+		{
+			position[]={20246.961,2.4481544,19700.002};
+			name="normalloot_522";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item579
+		{
+			position[]={20236.893,4.5258713,19724.744};
+			name="normalloot_523";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item580
+		{
+			position[]={20219.748,3.424751,19678.523};
+			name="normalloot_524";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item581
+		{
+			position[]={20225.191,3.5389893,19648.342};
+			name="normalloot_525";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item582
+		{
+			position[]={20238.252,3.0260913,19638.281};
+			name="normalloot_526";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item583
+		{
+			position[]={20251.586,2.2756224,19610.822};
+			name="normalloot_527";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item584
+		{
+			position[]={20229,3.4959767,19617.074};
+			name="normalloot_528";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item585
+		{
+			position[]={20214.305,3.5072048,19627.951};
+			name="normalloot_529";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item586
+		{
+			position[]={20211.311,4.0910182,19652.691};
+			name="normalloot_530";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item587
+		{
+			position[]={20271.725,2.371001,19616.26};
+			name="normalloot_531";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item588
+		{
+			position[]={20286.691,2.1447659,19644.807};
+			name="normalloot_532";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item589
+		{
+			position[]={20236.893,2.4932911,19674.172};
+			name="normalloot_533";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item590
+		{
+			position[]={20296.76,3.6940675,19594.234};
+			name="normalloot_534";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item591
+		{
+			position[]={20285.602,2.2252784,19618.979};
+			name="normalloot_535";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item592
+		{
+			position[]={20321.252,2.1425538,19621.426};
+			name="normalloot_536";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item593
+		{
+			position[]={20301.932,2.391609,19642.088};
+			name="normalloot_537";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item594
+		{
+			position[]={20283.426,2.1544678,19663.025};
+			name="normalloot_538";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item595
+		{
+			position[]={20264.105,2.0388649,19684.775};
+			name="normalloot_539";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item596
+		{
+			position[]={20734.486,4.0214844,20364.734};
+			name="normalloot_540";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item597
+		{
+			position[]={20728.129,3.23281,20394.643};
+			name="normalloot_541";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item598
+		{
+			position[]={20752.369,2.4402516,20393.055};
+			name="normalloot_542";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item599
+		{
+			position[]={20774.357,2.8851001,20405.098};
+			name="normalloot_543";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item600
+		{
+			position[]={20794.355,3.1014941,20427.201};
+			name="normalloot_544";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item601
+		{
+			position[]={20784.16,3.5765479,20418.996};
+			name="normalloot_545";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item602
+		{
+			position[]={20759.652,2.8980932,20405.232};
+			name="normalloot_546";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item603
+		{
+			position[]={20741.77,2.9386353,20403.908};
+			name="normalloot_547";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item604
+		{
+			position[]={20836.707,3.4803104,20444.803};
+			name="normalloot_548";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item605
+		{
+			position[]={20824.137,4.2185526,20434.59};
+			name="normalloot_549";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item606
+		{
+			position[]={20826.369,2.6545141,20455.014};
+			name="normalloot_550";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item607
+		{
+			position[]={20812.037,2.6512108,20448.441};
+			name="normalloot_551";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item608
+		{
+			position[]={20798.877,3.3323827,20438.932};
+			name="normalloot_552";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item609
+		{
+			position[]={20795.822,3.9032035,20417.1};
+			name="normalloot_553";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item610
+		{
+			position[]={20779.963,2.9019873,20429.309};
+			name="normalloot_554";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item611
+		{
+			position[]={20768.805,2.7841699,20418.51};
+			name="normalloot_555";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item612
+		{
+			position[]={20754.119,2.7315893,20413.463};
+			name="normalloot_556";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item613
+		{
+			position[]={20744.02,3.0710742,20382.438};
+			name="normalloot_557";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item614
+		{
+			position[]={20880.717,2.2341139,19773.641};
+			name="normalloot_558";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item615
+		{
+			position[]={20866.277,2.332412,19783.564};
+			name="normalloot_559";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item616
+		{
+			position[]={20860.318,1.759082,19759.742};
+			name="normalloot_560";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item617
+		{
+			position[]={20832.234,2.2381663,19755.111};
+			name="normalloot_561";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item618
+		{
+			position[]={20898.004,2.3136525,19789.457};
+			name="normalloot_562";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item619
+		{
+			position[]={20891.418,2.1011815,19804.35};
+			name="normalloot_563";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item620
+		{
+			position[]={20917.016,2.8881104,19783.824};
+			name="normalloot_564";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item621
+		{
+			position[]={20912.975,2.4757836,19800.48};
+			name="normalloot_565";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item622
+		{
+			position[]={20912.816,2.3042774,19751.715};
+			name="normalloot_566";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item623
+		{
+			position[]={20916.816,2.8281176,19712.455};
+			name="normalloot_567";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item624
+		{
+			position[]={20892.947,1.304397,19714.875};
+			name="normalloot_568";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item625
+		{
+			position[]={20833.033,2.3387866,19644.303};
+			name="normalloot_569";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item626
+		{
+			position[]={20748.158,1.2853296,20328.889};
+			name="normalloot_570";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item627
+		{
+			position[]={20749.869,1.2508692,20305.367};
+			name="normalloot_571";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item628
+		{
+			position[]={20756.131,1.0866261,20279.57};
+			name="normalloot_572";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item629
+		{
+			position[]={20765.059,0.62831789,20258.516};
+			name="normalloot_573";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item630
+		{
+			position[]={20839.094,0,20158.982};
+			name="normalloot_574";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item631
+		{
+			position[]={20836.918,0.4651807,20148.105};
+			name="normalloot_575";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item632
+		{
+			position[]={20844.537,0.66980463,20126.627};
+			name="normalloot_576";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item633
+		{
+			position[]={20857.053,0.78131348,20110.584};
+			name="normalloot_577";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item634
+		{
+			position[]={20869.299,1.2681983,20094.814};
+			name="normalloot_578";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item635
+		{
+			position[]={20299.17,5.2738523,19577.576};
+			name="normalloot_579";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item636
+		{
+			position[]={20279.457,4.9984469,19583.693};
+			name="normalloot_580";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item637
+		{
+			position[]={20252.273,4.8369117,19594.139};
+			name="normalloot_581";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item638
+		{
+			position[]={20228.379,4.0953417,19604.586};
+			name="normalloot_582";
+			type="hd_dot";
+			colorName="ColorOrange";
+		};
+		class Item639
+		{
+			position[]={20206.852,3.8385913,19616.068};
+			name="normalloot_583";
 			type="hd_dot";
 			colorName="ColorOrange";
 		};

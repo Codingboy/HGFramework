@@ -6,8 +6,8 @@ _effectLengthMin = _this select 4;
 _effectLengthMax = _this select 5;
 _noEffectLengthMin = _this select 6;
 _noEffectLengthMax = _this select 7;
-
-while {true} do
+_active = true;
+while {_active} do
 {
 	if (damage player >= _dmg) then
 	{
@@ -28,5 +28,9 @@ while {true} do
 	else
 	{
 		sleep 1;
+	};
+	if (!alive player) then
+	{
+		_active = false;
 	};
 };

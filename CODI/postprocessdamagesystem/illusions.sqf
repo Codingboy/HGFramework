@@ -10,8 +10,8 @@ _noEffectLengthMin = _this select 8;
 _noEffectLengthMax = _this select 9;
 
 _illusions = ppEffectCreate ["ChromAberration", 200];
-
-while {true} do
+_active = true;
+while {_active} do
 {
 	if (damage player >= _dmg) then
 	{
@@ -43,5 +43,13 @@ while {true} do
 		_illusions ppEffectCommit 1;
 		sleep 1;
 		_illusions ppEffectEnable false;
+	};
+	if (!alive player) then
+	{
+		_active = false;
+		_illusions ppEffectAdjust[0, 0, true];
+		_illusions ppEffectCommit 0;
+		_illusions ppEffectEnable false;
+		ppEffectDestroy _illusions;
 	};
 };

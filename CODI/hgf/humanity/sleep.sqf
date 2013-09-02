@@ -45,8 +45,8 @@ if (_fatigue > 0) then
 
 	if (CODI_hgf_license_fadeToBlack) then
 	{
-		1 fadeSound _rV;
-		1 fadeRadio _sV;
+		1 fadeSound _sV;
+		1 fadeRadio _rV;
 		1 fadeMusic _mV;
 		titleText ["", "BLACK IN", 1];
 	};

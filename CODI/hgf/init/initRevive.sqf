@@ -5,8 +5,8 @@ if (!isDedicated) then
 		{
 			if (_x != player) then
 			{
-				_x addAction [localize "STR_ACT_REVIVE", {_null = [_x, player] execVM "CODI\hgf\revive\revive.sqf"}, nil, 0, false, true, "", "_target getVariable[format["dead_", name _target], 0] == 0 && _target distance _caller < 3 && _this getVariable[format["dead_", name _this], 0] == 1 && (""Medikit"" in backpackItems _target || ""Medikit"" in backpackItems _this)"];
-				_x addAction ["<t color='#ff0000'>"+(localize "STR_ACT_KILL")+"</t>", {_null = [_x] execVM "CODI\hgf\revive\kill.sqf"}, nil, 0, false, true, "", "_target distance _caller < 3 && _this getVariable[format["dead_", name _this], 0] == 1"];
+				_x addAction [localize "STR_ACT_REVIVE", {_null = [_x, player] execVM "CODI\hgf\revive\revive.sqf"}, nil, 0, false, true, "", "_target getVariable[format["dead_", name _target], 1] == 0 && _target distance _this < 3 && _this getVariable[format["dead_", name _this], 0] == 0 && (""Medikit"" in backpackItems _target || ""Medikit"" in backpackItems _this)"];
+				_x addAction ["<t color='#ff0000'>"+(localize "STR_ACT_KILL")+"</t>", {_null = [_x] execVM "CODI\hgf\revive\kill.sqf"}, nil, 0, false, true, "", "_target distance _this < 3 && _target getVariable[format["dead_", name _this], 0] == 1"];
 			};
 		}
 		forEach CODI_hgf_players;

@@ -3,8 +3,9 @@ _effectLengthMin = _this select 1;
 _effectLengthMax = _this select 2;
 _noEffectLengthMin = _this select 3;
 _noEffectLengthMax = _this select 4;
-
-while {true} do
+_active = true;
+_blackout = false;
+while {_active} do
 {
 	if (damage player >= _dmg) then
 	{
@@ -19,9 +20,8 @@ while {true} do
 		1 fadeMusic 0;
 		sleep _sleep;
 		
-		titleText ["", "BLACK IN"];
-		1 fadeSound _rV;
-		1 fadeRadio _sV;
+		1 fadeSound _sV;
+		1 fadeRadio _rV;
 		1 fadeMusic _mV;
 		titleText ["", "BLACK IN", 1];
 		_sleep = random(_noEffectLengthMax-_noEffectLengthMin) + _noEffectLengthMin;
@@ -30,5 +30,10 @@ while {true} do
 	else
 	{
 		sleep 1;
+	};
+	if (!alive player) then
+	{
+		titleText ["", "BLACK IN", 0];
+		_active = false;
 	};
 };

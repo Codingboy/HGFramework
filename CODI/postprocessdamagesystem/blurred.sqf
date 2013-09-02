@@ -10,7 +10,8 @@ _noEffectLengthMin = _this select 8;
 _noEffectLengthMax = _this select 9;
 
 _blurred = ppEffectCreate ["DynamicBlur", 500];
-while {true} do
+_active = true;
+while {_active} do
 {
 	if (damage player >= _dmg) then
 	{
@@ -42,5 +43,13 @@ while {true} do
 		_blurred ppEffectCommit 1;
 		sleep 1;
 		_blurred ppEffectEnable false;
+	};
+	if (!alive player) then
+	{
+		_active = false;
+		_blurred ppEffectAdjust[0, 0, true];
+		_blurred ppEffectCommit 0;
+		_blurred ppEffectEnable false;
+		ppEffectDestroy _blurred;
 	};
 };

@@ -10,8 +10,8 @@ _noEffectLengthMin = _this select 8;
 _noEffectLengthMax = _this select 9;
 
 _neardeath = ppEffectCreate ["FilmGrain", 2000];
-
-while {true} do
+_active = true;
+while {_active} do
 {
 	if (damage player >= _dmg) then
 	{
@@ -43,5 +43,13 @@ while {true} do
 		_neardeath ppEffectCommit 1;
 		sleep 1;
 		_neardeath ppEffectEnable false;
+	};
+	if (!alive player) then
+	{
+		_active = false;
+		_neardeath ppEffectAdjust[0, 0, true];
+		_neardeath ppEffectCommit 0;
+		_neardeath ppEffectEnable false;
+		ppEffectDestroy _neardeath;
 	};
 };

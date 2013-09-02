@@ -10,8 +10,8 @@ _noEffectLengthMin = _this select 8;
 _noEffectLengthMax = _this select 9;
 
 _tunnelview = ppEffectCreate ["RadialBlur", 1000];
-
-while {true} do
+_active = true;
+while {_active} do
 {
 	if (damage player >= _dmg) then
 	{
@@ -43,5 +43,13 @@ while {true} do
 		_tunnelview ppEffectCommit 1;
 		sleep 1;
 		_tunnelview ppEffectEnable false;
+	};
+	if (!alive player) then
+	{
+		_alive = false;
+		_tunnelview ppEffectAdjust[0, 0, 0, 0];
+		_tunnelview ppEffectCommit 0;
+		_tunnelview ppEffectEnable false;
+		ppEffectDestroy _tunnelview;
 	};
 };

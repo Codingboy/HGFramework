@@ -74,14 +74,14 @@ CODI_hgf_loot_weaponsMagazines = ["30Rnd_65x39_caseless_mag", "150Rnd_762x51_Box
 
 CODI_hgf_loot_ammo = ["30Rnd_65x39_caseless_mag", "150Rnd_762x51_Box", "30Rnd_65x39_caseless_green_mag_Tracer", "5Rnd_127x108_Mag", "30Rnd_65x39_caseless_green", "20Rnd_762x51_Mag", "7Rnd_408_Mag", "30Rnd_556x45_Stanag", "200Rnd_65x39_cased_Box", "100Rnd_65x39_caseless_mag", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Yellow", "30Rnd_65x39_caseless_mag_Tracer", "100Rnd_65x39_caseless_mag_Tracer", "200Rnd_65x39_cased_Box_Tracer", "150Rnd_762x51_Box_Tracer", "20Rnd_556x45_UW_mag", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", "30Rnd_9x21_Mag"];
 CODI_hgf_loot_grenades = ["HandGrenade", "SmokeShell", "Chemlight_blue", "1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F"];
-CODI_hgf_loot_special = ["B_Mortar_01_weapon_F","B_Mortar_01_support_F","B_UavTerminal","B_UAV_01_backpack_F", "Medikit", "U_B_Wetsuit", "V_RebreatherB", "U_B_GhillieSuit", "V_PlateCarrier2_rgr", "MineDetector", "NVGoggles", "Rangefinder", "H_HelmetB", "Binocular", "B_Kitbag_mcamo", "ToolKit"];
-CODI_hgf_loot_support = ["optic_Arco", "optic_Hamr", "optic_SOS", "optic_Holosight", "muzzle_snds_B", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_L", "muzzle_snds_M", "muzzle_snds_acp", "acc_pointer_IR", "acc_flashlight", "optic_Aco", "optic_Aco_grn"];
+CODI_hgf_loot_special = ["B_HMG_01_support_high_F","B_HMG_01_high_weapon_F","B_Mortar_01_weapon_F","B_Mortar_01_support_F","B_UavTerminal","B_UAV_01_backpack_F", "Medikit", "U_B_Wetsuit", "V_RebreatherB", "U_B_GhillieSuit", "V_PlateCarrier2_rgr", "MineDetector", "NVGoggles", "Rangefinder", "H_HelmetB", "Binocular", "B_Kitbag_mcamo", "ToolKit"];
+CODI_hgf_loot_support = ["optic_MRCO","optic_NVS","optic_Arco", "optic_Hamr", "optic_SOS", "optic_Holosight", "muzzle_snds_B", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_L", "muzzle_snds_M", "muzzle_snds_acp", "acc_pointer_IR", "acc_flashlight", "optic_Aco", "optic_Aco_grn"];
 CODI_hgf_loot_explosives = ["ClaymoreDirectionalMine_Remote_Mag", "APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag", "DemoCharge_Remote_Mag", "APERSTripMine_Wire_Mag"];
 CODI_hgf_loot_default = ["16Rnd_9x21_Mag","FirstAidKit","hgun_P07_F","hgun_ACPC2_F","9Rnd_45ACP_Mag"];
 
-CODI_hgf_vehicles = ["B_UGV_01_F", "B_MRAP_01_F", "O_MRAP_02_F", "B_Quadbike_01_F", "I_MRAP_03_F", "C_Offroad_01_F"];
+CODI_hgf_vehicles = ["C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_UGV_01_F", "B_MRAP_01_F", "O_MRAP_02_F", "B_Quadbike_01_F", "I_MRAP_03_F", "C_Offroad_01_F"];
 CODI_hgf_boats = ["B_Boat_Transport_01_F","B_Lifeboat","B_SDV_01_F"];
-CODI_hgf_helis = ["B_Heli_Light_01_F", "O_Heli_Light_02_F", "I_Heli_Transport_02_F"];
+CODI_hgf_helis = ["B_heli_light_01_f", "O_Heli_Light_02_F", "I_Heli_Transport_02_F"];
 
 /*
  *
